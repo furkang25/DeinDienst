@@ -17,16 +17,38 @@
             android:layout_height="55dp"
             android:background="@color/Black1">
 
-            <TextView
-                android:id="@+id/konto"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/inter_bold"
-                android:text="Erstellen"
-                android:textAlignment="center"
-                android:textColor="@color/main_Color"
-                android:textSize="32dp" />
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="TODO"
+                    android:minWidth="48dp"
+                    android:minHeight="32dp"
+                    android:src="@drawable/icon_back" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center|center_vertical"
+                    android:text="Erstellen"
+                    android:textColor="@color/main_Color"
+                    android:textSize="32dp" />
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+            </LinearLayout>
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -41,7 +63,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
@@ -115,7 +137,6 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
                     android:layout_marginTop="5dp"
@@ -134,7 +155,6 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/imageView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -144,7 +164,7 @@
                         tools:ignore="DuplicateIds" />
 
                     <EditText
-                        android:id="@+id/name2"
+                        android:id="@+id/verfuegbarkeitText"
                         android:layout_width="280dp"
                         android:layout_height="50dp"
                         android:background="@drawable/rounded_button"
@@ -164,7 +184,6 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
                     android:layout_marginTop="5dp"
@@ -184,7 +203,6 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/imageView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -194,7 +212,7 @@
                         tools:ignore="DuplicateIds" />
 
                     <EditText
-                        android:id="@+id/name2"
+                        android:id="@+id/kategorieFeld"
                         android:layout_width="280dp"
                         android:layout_height="50dp"
                         android:background="@drawable/rounded_button"
@@ -214,7 +232,6 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
                     android:layout_marginTop="5dp"
@@ -225,6 +242,178 @@
                     android:text="Gib hier deinen Kategorie ein (Pflichtfeld) "
                     android:textColor="@color/white"
                     android:textSize="8sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/beschreibungText"
+                        android:layout_width="350dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_button"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="left"
+                        android:hint="Beschreibung"
+                        android:inputType="textPersonName"
+                        android:minHeight="20dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/main_Color"
+                        android:textColorHint="@color/white50"
+                        android:textColorLink="@color/black"
+                        android:textIsSelectable="false"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="40dp"
+                        android:fontFamily="@font/inter"
+                        android:text="Gib hier deinen Beschreibung ein. (min. 9999 Zeichen) (Pflichtfeld) "
+                        android:textColor="@color/white"
+                        android:textSize="8sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="clip_horizontal"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/pictureUploadText"
+                            android:layout_width="290dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_button"
+                            android:fontFamily="@font/inter_medium"
+                            android:hint="Bild hinzufügen"
+                            android:inputType="textPersonName"
+                            android:minHeight="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/main_Color"
+                            android:textColorHint="@color/white50"
+                            android:textColorLink="@color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:id="@+id/pictureUploadButton"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/rounded_button"
+                            android:contentDescription="pictureUploadButton"
+                            android:src="@drawable/icon_upload" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="40dp"
+                        android:fontFamily="@font/inter"
+                        android:text="Gib hier ein Bild hinzu."
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        tools:ignore="DuplicateIds" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="clip_horizontal"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/linzenzenText"
+                            android:layout_width="290dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_button"
+                            android:fontFamily="@font/inter_medium"
+                            android:hint="Lizenzen"
+                            android:inputType="textPersonName"
+                            android:minHeight="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/main_Color"
+                            android:textColorHint="@color/white50"
+                            android:textColorLink="@color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp"
+                            android:autofillHints=""
+                            tools:ignore="DuplicateIds" />
+
+                        <ImageButton
+                            android:id="@+id/linzenzenButton"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/rounded_button"
+                            android:contentDescription="linzenzenButton"
+                            android:src="@drawable/icon_upload"
+                            tools:ignore="DuplicateIds" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="40dp"
+                        android:fontFamily="@font/inter"
+                        android:text="Gib hier deinen Lizenzen ein. "
+                        android:textColor="@color/white"
+                        android:textSize="8sp" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="320dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_button_3"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Anzeige aufgeben"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
 
             </LinearLayout>
         </ScrollView>

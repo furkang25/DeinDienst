@@ -3,15 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Account.SettingsFragment"
-    android:background="@color/white"
-    >
+    android:background="@color/black"
+    tools:context=".Account.SettingsFragment">
 
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:background="@color/main_Color">
+        android:background="@color/Black1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,10 +21,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
-                android:background="@color/main_Color"
+                android:background="@android:color/transparent"
                 android:contentDescription="TODO"
                 android:minWidth="48dp"
-                android:minHeight="32dp" />
+                android:minHeight="32dp"
+                android:src="@drawable/icon_back" />
 
             <TextView
                 android:id="@+id/konto"
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="right"
-                android:background="@color/main_Color"
+                android:background="@android:color/transparent"
                 android:contentDescription="TODO"
                 android:minWidth="48dp"
                 android:minHeight="32dp"
@@ -54,12 +54,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:text="Settings"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="50dp" />
-
 
 
 </RelativeLayout>
