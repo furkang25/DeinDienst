@@ -45,7 +45,7 @@
                 android:contentDescription="TODO"
                 android:minWidth="48dp"
                 android:minHeight="32dp"
-                tools:src="@drawable/settings_icon" />
+                tools:src="@drawable/icon_settings" />
 
         </LinearLayout>
 

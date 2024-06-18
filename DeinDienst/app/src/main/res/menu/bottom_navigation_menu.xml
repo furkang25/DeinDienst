@@ -4,17 +4,17 @@
 
     <item
         android:id="@+id/menu_home"
-        android:icon="@drawable/home_icon"
+        android:icon="@drawable/icon_home"
         android:title="Startseite" />
 
     <item
         android:id="@+id/menu_search"
-        android:icon="@drawable/search_icon"
+        android:icon="@drawable/icon_search"
         android:title="Suche"/>
 
     <item
         android:id="@+id/menu_create"
-        android:icon="@drawable/create_icon"
+        android:icon="@drawable/icon_create"
         android:title="Erstellen"/>
 
     <item
@@ -24,7 +24,7 @@
 
     <item
         android:id="@+id/menu_account"
-        android:icon="@drawable/account_icon"
+        android:icon="@drawable/icon_account"
         android:title="Konto"/>
 
 </menu>

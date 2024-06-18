@@ -143,7 +143,7 @@
                         android:id="@+id/imageButton"
                         android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_button2"
+                        android:background="@drawable/rounded_button_2"
                         android:contentDescription="feld1" />
 
                     <ImageButton
@@ -152,7 +152,7 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
                         android:layout_weight="1"
-                        android:background="@drawable/rounded_button2"
+                        android:background="@drawable/rounded_button_2"
                         android:contentDescription="feld2" />
 
                 </LinearLayout>
@@ -169,7 +169,7 @@
                         android:layout_width="150dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        android:background="@drawable/rounded_button2"
+                        android:background="@drawable/rounded_button_2"
                         android:contentDescription="feld3" />
 
                     <ImageButton
@@ -178,7 +178,7 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
                         android:layout_weight="1"
-                        android:background="@drawable/rounded_button2"
+                        android:background="@drawable/rounded_button_2"
                         android:contentDescription="feld4" />
 
                 </LinearLayout>
@@ -206,7 +206,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/bar"
+        android:background="@drawable/menubar"
         app:itemIconSize="24dp"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
