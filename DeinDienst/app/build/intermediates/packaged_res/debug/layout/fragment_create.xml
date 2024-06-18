@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.CreateFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/main_Color">
+
+        <TextView
+            android:id="@+id/konto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="Erstellen"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="32dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="70dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="360dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/eingabefeld"
+                    android:hint="Titel"
+                    android:inputType="textPersonName"
+                    android:minHeight="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textIsSelectable="false"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/telefonnummer"
+                    android:layout_width="320dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/eingabefeld"
+                    android:hint="Telefonnummer"
+                    android:inputType="textPersonName"
+                    android:minHeight="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textIsSelectable="false"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/verfuegbarkeit"
+                    android:layout_width="320dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/eingabefeld"
+                    android:hint="Verfügbarkeit"
+                    android:inputType="textPersonName"
+                    android:minHeight="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textIsSelectable="false"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/kategorie"
+                    android:layout_width="320dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/eingabefeld"
+                    android:hint="Kategorie"
+                    android:inputType="textPersonName"
+                    android:minHeight="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textIsSelectable="false"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/beschreibung"
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/eingabefeld2"
+                    android:hint="Beschreibung"
+                    android:inputType="textPersonName"
+                    android:minHeight="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textIsSelectable="false"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/preis"
+                    android:layout_width="320dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/eingabefeld"
+                    android:hint="Preis"
+                    android:inputType="textPersonName"
+                    android:minHeight="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textIsSelectable="false"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
