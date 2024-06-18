@@ -28,7 +28,10 @@ id action_accountFragment_to_settingsFragment
 id action_settingsFragment_to_accountFragment
 id beschreibung
 id bottom_navigation
+id buttonAddImage
 id container
+id deleteButton
+id email
 id fragment_container
 id imagePreview
 id kategorie
@@ -41,8 +44,10 @@ id menu_search
 id name
 id nav_settings.xml
 id preis
+id recyclerView
 id settingsButton
 id settingsFragment
+id standort
 id tabLayout
 id telefonnummer
 id verfuegbarkeit

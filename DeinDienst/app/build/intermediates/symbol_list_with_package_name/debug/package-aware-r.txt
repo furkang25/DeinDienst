@@ -2967,6 +2967,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id buttonAddImage
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3011,6 +3012,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3041,6 +3043,7 @@ id easeOut
 id east
 id edit_query
 id elastic
+id email
 id embed
 id end
 id endToStart
@@ -3226,6 +3229,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3302,6 +3306,7 @@ id src_atop
 id src_in
 id src_over
 id standard
+id standort
 id start
 id startHorizontal
 id startToEnd

@@ -5,10 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import de.tecrox.deindienst.R;
@@ -24,6 +26,15 @@ public final class FragmentCreateBinding implements ViewBinding {
   public final EditText beschreibung;
 
   @NonNull
+  public final ImageButton buttonAddImage;
+
+  @NonNull
+  public final ImageButton deleteButton;
+
+  @NonNull
+  public final EditText email;
+
+  @NonNull
   public final EditText kategorie;
 
   @NonNull
@@ -36,20 +47,34 @@ public final class FragmentCreateBinding implements ViewBinding {
   public final EditText preis;
 
   @NonNull
+  public final RecyclerView recyclerView;
+
+  @NonNull
+  public final EditText standort;
+
+  @NonNull
   public final EditText telefonnummer;
 
   @NonNull
   public final EditText verfuegbarkeit;
 
   private FragmentCreateBinding(@NonNull RelativeLayout rootView, @NonNull EditText beschreibung,
-      @NonNull EditText kategorie, @NonNull TextView konto, @NonNull EditText name,
-      @NonNull EditText preis, @NonNull EditText telefonnummer, @NonNull EditText verfuegbarkeit) {
+      @NonNull ImageButton buttonAddImage, @NonNull ImageButton deleteButton,
+      @NonNull EditText email, @NonNull EditText kategorie, @NonNull TextView konto,
+      @NonNull EditText name, @NonNull EditText preis, @NonNull RecyclerView recyclerView,
+      @NonNull EditText standort, @NonNull EditText telefonnummer,
+      @NonNull EditText verfuegbarkeit) {
     this.rootView = rootView;
     this.beschreibung = beschreibung;
+    this.buttonAddImage = buttonAddImage;
+    this.deleteButton = deleteButton;
+    this.email = email;
     this.kategorie = kategorie;
     this.konto = konto;
     this.name = name;
     this.preis = preis;
+    this.recyclerView = recyclerView;
+    this.standort = standort;
     this.telefonnummer = telefonnummer;
     this.verfuegbarkeit = verfuegbarkeit;
   }
@@ -87,6 +112,24 @@ public final class FragmentCreateBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.buttonAddImage;
+      ImageButton buttonAddImage = ViewBindings.findChildViewById(rootView, id);
+      if (buttonAddImage == null) {
+        break missingId;
+      }
+
+      id = R.id.deleteButton;
+      ImageButton deleteButton = ViewBindings.findChildViewById(rootView, id);
+      if (deleteButton == null) {
+        break missingId;
+      }
+
+      id = R.id.email;
+      EditText email = ViewBindings.findChildViewById(rootView, id);
+      if (email == null) {
+        break missingId;
+      }
+
       id = R.id.kategorie;
       EditText kategorie = ViewBindings.findChildViewById(rootView, id);
       if (kategorie == null) {
@@ -111,6 +154,18 @@ public final class FragmentCreateBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.recyclerView;
+      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerView == null) {
+        break missingId;
+      }
+
+      id = R.id.standort;
+      EditText standort = ViewBindings.findChildViewById(rootView, id);
+      if (standort == null) {
+        break missingId;
+      }
+
       id = R.id.telefonnummer;
       EditText telefonnummer = ViewBindings.findChildViewById(rootView, id);
       if (telefonnummer == null) {
@@ -123,8 +178,9 @@ public final class FragmentCreateBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCreateBinding((RelativeLayout) rootView, beschreibung, kategorie, konto,
-          name, preis, telefonnummer, verfuegbarkeit);
+      return new FragmentCreateBinding((RelativeLayout) rootView, beschreibung, buttonAddImage,
+          deleteButton, email, kategorie, konto, name, preis, recyclerView, standort, telefonnummer,
+          verfuegbarkeit);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

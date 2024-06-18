@@ -4,7 +4,7 @@
             "outputFile": "de.tecrox.deindienst.app-mergeDebugResources-43:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/furo/.gradle/caches/transforms-3/0d291c9371dfbedda11ea76171717f69/transformed/material-1.8.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "C:\\Users\\Furo\\.gradle\\caches\\transforms-3\\0d291c9371dfbedda11ea76171717f69\\transformed\\material-1.8.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

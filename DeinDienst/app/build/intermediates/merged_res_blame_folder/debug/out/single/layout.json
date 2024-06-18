@@ -1,62 +1,54 @@
 [
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_settings.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/fragment_settings.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\activity_load_screen.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\activity_load_screen.xml"
     },
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/item_image.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/item_image.xml"
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-44:/layout/item_image.xml",
+        "source": "de.tecrox.deindienst.app-main-47:/layout/item_image.xml"
     },
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_account.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/fragment_account.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\fragment_search.xml"
     },
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_favorit.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/fragment_favorit.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/activity_load_screen.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/activity_load_screen.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\fragment_anzeigen.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\fragment_anzeigen.xml"
     },
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_dienst.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/fragment_dienst.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\fragment_messages.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\fragment_messages.xml"
     },
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_create.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/fragment_create.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\fragment_account.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\fragment_account.xml"
     },
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_messages.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/fragment_messages.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\activity_main.xml"
     },
     {
-        "merged": "de.tecrox.deindienst.app-mergeDebugResources-44:/layout/activity_main.xml",
-        "source": "de.tecrox.deindienst.app-main-47:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\fragment_dienst.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\fragment_dienst.xml"
     },
     {
-        "merged": "de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_home.xml",
-        "source": "de.tecrox.deindienst.app-main-47:/layout/fragment_home.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\item_image.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\item_image.xml"
     },
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_search.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/fragment_search.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\fragment_favorit.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\fragment_favorit.xml"
     },
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/activity_main.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\fragment_create.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\fragment_create.xml"
     },
     {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_anzeigen.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/fragment_anzeigen.xml"
-    },
-    {
-        "merged": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_home.xml",
-        "source": "/Users/furo/.gradle/daemon/7.4/de.tecrox.deindienst.app-main-47:/layout/fragment_home.xml"
-    },
-    {
-        "merged": "de.tecrox.deindienst.app-mergeDebugResources-44:/layout/fragment_messages.xml",
-        "source": "de.tecrox.deindienst.app-main-47:/layout/fragment_messages.xml"
+        "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-44:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-47:\\layout\\fragment_home.xml"
     }
 ]
