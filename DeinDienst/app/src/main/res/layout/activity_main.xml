@@ -1,121 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="@color/Black1">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inter_bold"
-            android:text="Startseite"
-            android:textAlignment="center"
-            android:textColor="@color/main_Color"
-            android:textSize="32dp"
-            android:textStyle="bold" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingTop="55dp">
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="290dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/inter_medium"
-            android:gravity="center|left"
-            android:text="Willkommen bei Dein Dienst "
-            android:textColor="@color/white"
-            android:textSize="32dp"
-            android:textStyle="bold" />
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/Black1">
 
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="270dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="50dp"
-            android:fontFamily="@font/inter"
-            android:text="Finden Sie die besten Dienstleistungsanbieter in Ihrer Nähe."
-            android:textColor="@color/white"
-            android:textSize="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Startseite"
+                android:textAlignment="center"
+                android:textColor="@color/main_Color"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.appbar.AppBarLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="55dp">
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#121212"
-                app:srcCompat="@drawable/settings_icon" />
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="left"
+                android:text="Willkommen bei Dein Dienst "
+                android:textColor="@color/white"
+                android:textSize="32dp"
+                android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#121212"
-                app:srcCompat="@drawable/settings_icon" />
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Finden Sie die besten Dienstleistungsanbieter in Ihrer Nähe."
+                android:textColor="@color/white"
+                android:textSize="12sp" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#121212"
-                app:srcCompat="@drawable/settings_icon" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#121212"
-                app:srcCompat="@drawable/settings_icon" />
+                <ImageButton
+                    android:id="@+id/buttonAdvice"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="TODO"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/icon_advice" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
+                <ImageButton
+                    android:id="@+id/buttonEducation"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="TODO2"
+                    app:srcCompat="@drawable/icon_education" />
+
+                <ImageButton
+                    android:id="@+id/buttonCrafts"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="icon_crafts"
+                    app:srcCompat="@drawable/icon_crafts" />
+
+                <ImageButton
+                    android:id="@+id/buttonItservices"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="icon_itservices"
+                    app:srcCompat="@drawable/icon_itservices" />
+
+                <ImageButton
+                    android:id="@+id/buttonLogistics"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="icon_logistics"
+                    app:srcCompat="@drawable/icon_logistics" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Top Dienstleister in ein Überblick"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#121212"
-                app:srcCompat="@drawable/settings_icon" />
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_button2"
+                        android:contentDescription="feld1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button2"
+                        android:contentDescription="feld2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button2"
+                        android:contentDescription="feld3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button2"
+                        android:contentDescription="feld4" />
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
-
     </LinearLayout>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
         android:background="@drawable/bar"
         app:itemIconSize="24dp"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation_menu" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
