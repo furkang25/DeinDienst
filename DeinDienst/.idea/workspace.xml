@@ -28,12 +28,12 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_create.xml">
         <config>
-          <night>night</night>
           <theme>@style/Theme.DeinDienst</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
         <config>
+          <night>night</night>
           <theme>@style/Theme.DeinDienst</theme>
         </config>
       </layout>
@@ -57,13 +57,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcb1cf36-984b-4e67-b7ae-e89be751ac34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/rounded_button_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_back.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_button_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-night/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_create.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_create.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/tecrox/deindienst/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/tecrox/deindienst/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +135,10 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;V.1.0&quot;,
     &quot;last_directory_selection&quot;: &quot;/Users/furo/Documents/GitHub/DeinDienst/DeinDienst/app/src/main/res/drawable-v24&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/furo/Documents/GitHub/DeinDienst/DeinDienst&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/furo/Documents/GitHub/DeinDienst/DeinDienst&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="PsdUISettings">
@@ -249,6 +251,17 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V.1.1" />
