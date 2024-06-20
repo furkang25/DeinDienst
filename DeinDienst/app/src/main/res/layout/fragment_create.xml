@@ -361,6 +361,7 @@
                             android:layout_width="290dp"
                             android:layout_height="50dp"
                             android:layout_gravity="center"
+                            android:autofillHints=""
                             android:background="@drawable/rounded_button"
                             android:fontFamily="@font/inter_medium"
                             android:hint="Lizenzen"
@@ -373,7 +374,6 @@
                             android:textColorLink="@color/black"
                             android:textIsSelectable="false"
                             android:textSize="12sp"
-                            android:autofillHints=""
                             tools:ignore="DuplicateIds" />
 
                         <ImageButton
@@ -405,10 +405,9 @@
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="320dp"
-                    android:layout_height="45dp"
+                    android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/rounded_button_3"
                     android:fontFamily="@font/inter_medium"
                     android:text="Anzeige aufgeben"
                     android:textAllCaps="false"

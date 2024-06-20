@@ -20,6 +20,16 @@ import androidx.recyclerview.widget.RecyclerView
 
 class CreateFragment : Fragment() {
 
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_create, container, false)
+    }
+
+}
+
+    /*
     private lateinit var buttonAddImage: ImageButton
     private lateinit var recyclerView: RecyclerView
     private lateinit var imageAdapter: ImageAdapter
@@ -97,3 +107,4 @@ class CreateFragment : Fragment() {
 }
 
 
+     */

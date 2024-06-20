@@ -87,6 +87,23 @@ app:layout_constraintTop_toTopOf="parent">
             app:srcCompat="@drawable/icon_education"
             android:contentDescription="TODO" />
 
+        <ImageButton
+            android:id="@+id/buttonEducation2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/rounded_button"
+            app:srcCompat="@drawable/icon_education"
+            android:contentDescription="TODO" />
+        <ImageButton
+            android:id="@+id/buttonEducation3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/rounded_button"
+            app:srcCompat="@drawable/icon_education"
+            android:contentDescription="TODO" />
+
         <!--
         <ImageButton
             android:id="@+id/buttonCrafts"
@@ -146,7 +163,7 @@ app:layout_constraintTop_toTopOf="parent">
                 android:id="@+id/imageButton"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:background="@drawable/rounded_button_2"
+                android:background="@drawable/rounded_button"
                 android:contentDescription="feld1" />
 
             <ImageButton
@@ -155,8 +172,9 @@ app:layout_constraintTop_toTopOf="parent">
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/rounded_button_2"
-                android:contentDescription="feld2" />
+                android:background="@drawable/rounded_button"
+                android:contentDescription="feld2"
+                tools:ignore="ImageContrastCheck" />
 
         </LinearLayout>
 
@@ -172,7 +190,7 @@ app:layout_constraintTop_toTopOf="parent">
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="@drawable/rounded_button_2"
+                android:background="@drawable/rounded_button"
                 android:contentDescription="feld3" />
 
             <ImageButton
@@ -181,8 +199,9 @@ app:layout_constraintTop_toTopOf="parent">
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/rounded_button_2"
-                android:contentDescription="feld4" />
+                android:background="@drawable/rounded_button"
+                android:contentDescription="feld4"
+                tools:ignore="ImageContrastCheck" />
 
         </LinearLayout>
 
