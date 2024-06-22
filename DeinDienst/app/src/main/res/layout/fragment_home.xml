@@ -41,7 +41,7 @@ app:layout_constraintTop_toTopOf="parent">
         android:layout_height="80dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:fontFamily="@font/inter_medium"
         android:gravity="left"
         android:text="Willkommen bei Dein Dienst "
@@ -54,7 +54,7 @@ app:layout_constraintTop_toTopOf="parent">
         android:layout_height="30dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:fontFamily="@font/inter_medium"
         android:text="Finden Sie die besten Dienstleistungsanbieter in Ihrer Nähe."
         android:textColor="@color/white"
@@ -68,41 +68,139 @@ app:layout_constraintTop_toTopOf="parent">
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/buttonAdvice"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="15dp"
-            android:background="@drawable/rounded_button"
-            android:cropToPadding="false"
-            app:srcCompat="@drawable/icon_advice"
-            android:contentDescription="TODO" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="clip_horizontal|center"
+            android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/buttonEducation"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="15dp"
-            android:background="@drawable/rounded_button"
-            app:srcCompat="@drawable/icon_education"
-            android:contentDescription="TODO" />
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_button"
+                android:contentDescription="TODO"
+                android:cropToPadding="false" />
 
-        <ImageButton
-            android:id="@+id/buttonEducation2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="15dp"
-            android:background="@drawable/rounded_button"
-            app:srcCompat="@drawable/icon_education"
-            android:contentDescription="TODO" />
-        <ImageButton
-            android:id="@+id/buttonEducation3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="15dp"
-            android:background="@drawable/rounded_button"
-            app:srcCompat="@drawable/icon_education"
-            android:contentDescription="TODO" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="Beratung"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:gravity="clip_horizontal|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_button"
+                android:contentDescription="TODO"
+                android:cropToPadding="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="Bildung"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:gravity="clip_horizontal|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_button"
+                android:contentDescription="TODO"
+                android:cropToPadding="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="Handwerk"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:gravity="clip_horizontal|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_button"
+                android:contentDescription="TODO"
+                android:cropToPadding="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="IT-Services"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:gravity="clip_horizontal|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/buttonAdvice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_button"
+                android:contentDescription="TODO"
+                android:cropToPadding="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="Logistik"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
 
         <!--
         <ImageButton
@@ -123,14 +221,6 @@ app:layout_constraintTop_toTopOf="parent">
             app:srcCompat="@drawable/icon_itservices"
             android:contentDescription="TODO" />
 -->
-
-        <ImageButton
-            android:id="@+id/buttonLogistics"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_button"
-            app:srcCompat="@drawable/icon_logistics"
-            android:contentDescription="TODO" />
 
     </LinearLayout>
 

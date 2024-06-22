@@ -3,9 +3,13 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <device id="_device_class_phone" />
+        <device id="7in WSVGA (Tablet)" />
+        <device id="3.4in WQVGA" />
+        <device id="_device_class_foldable" />
         <device id="_device_class_desktop" />
-        <option name="nonWearDeviceLastStateName" value="portrait" />
+        <device id="pixel_3_xl" />
+        <device id="_device_class_phone" />
+        <option name="nonWearDeviceLastStateName" value="Portrait" />
         <target>android-30</target>
       </config>
     </shared>
@@ -62,40 +66,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcb1cf36-984b-4e67-b7ae-e89be751ac34" name="Changes" comment="V.1.1">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_account.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_advice.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_back.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_crafts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_create.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_education.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_home.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_itservices.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_logistics.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_search.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_upload.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/logo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/message_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/rounded_button.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/rounded_button_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/tecrox/deindienst/Fragment/CreateFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/tecrox/deindienst/Fragment/CreateFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_account.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_account.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_advice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_advice.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_upload.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_upload.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/message_icon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/message_icon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_button.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_button.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_button_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_button_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/inter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/font/inter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/inter_medium.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/font/inter_medium.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_create.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_create.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_education.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/icon_education.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_education.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_education.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,6 +130,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-night" />
