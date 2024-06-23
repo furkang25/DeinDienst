@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
     tools:context=".Account.SettingsFragment">
 
 
@@ -32,9 +32,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="@font/inter_bold"
                 android:gravity="center|center_vertical"
                 android:text="Einstellungen"
-                android:textColor="@color/white"
+                android:textColor="@color/main_Color"
                 android:textSize="32dp" />
 
             <ImageButton
@@ -56,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="Settings"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="50dp" />
 
 

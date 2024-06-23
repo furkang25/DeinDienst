@@ -4,105 +4,61 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import androidx.fragment.app.Fragment
-import de.tecrox.deindienst.Account.ViewPagerAdapter
-import androidx.viewpager2.widget.ViewPager2
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
-import de.tecrox.deindienst.Account.SettingsFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import de.tecrox.deindienst.Account.AnzeigenFragment
+import de.tecrox.deindienst.Account.DienstFragment
+import de.tecrox.deindienst.Account.FavoritFragment
 import de.tecrox.deindienst.R
+
 
 class AccountFragment : Fragment() {
 
-    private lateinit var tabLayout: TabLayout
-    private lateinit var viewPager: ViewPager2
-
-    private lateinit var settingsButton: ImageButton
-
+    // Diese Methode wird aufgerufen, wenn das Fragment die Ansicht erstellt
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
-        // Das Layout für dieses Fragment aufblasen
+        // Die Layout-Datei für dieses Fragment aufblähen (inflate)
         val view = inflater.inflate(R.layout.fragment_account, container, false)
 
-        // Initialisiere die Ansichten
-        settingsButton = view.findViewById(R.id.settingsButton)
+        // Das BottomNavigationView-Element aus der aufgeblasenen Ansicht finden
+        val bottomNavigationView: BottomNavigationView = view.findViewById(R.id.bottom_navigation)
 
-        // Setze einen Klicklistener für den Einstellungsbutton
-        settingsButton.setOnClickListener {
-            val fragment = SettingsFragment()
-            val transaction = requireActivity().supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container, fragment)
-            transaction.addToBackStack(null)
-            transaction.commit()
+        // Einen Listener setzen, der auf die Auswahl von Navigationselementen reagiert
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                // Wenn das Element mit der ID 'navigation_service' ausgewählt wird
+                R.id.navigation_service -> {
+                    // Fragment wechseln und 'DienstFragment' laden
+                    loadFragment(DienstFragment())
+                    true
+                }
+                // Wenn das Element mit der ID 'navigation_display' ausgewählt wird
+                R.id.navigation_display -> {
+                    // Fragment wechseln und 'AnzeigenFragment' laden
+                    loadFragment(AnzeigenFragment())
+                    true
+                }
+                // Wenn das Element mit der ID 'navigation_favorite' ausgewählt wird
+                R.id.navigation_favorite -> {
+                    // Fragment wechseln und 'FavoritFragment' laden
+                    loadFragment(FavoritFragment())
+                    true
+                }
+                // Standardfall: Keine Aktion
+                else -> {
+                    false
+                }
+            }
         }
 
-        // Initialize views
-        tabLayout = view.findViewById(R.id.tabLayout)
-        viewPager = view.findViewById(R.id.viewPager)
-
-        // Set up ViewPager2
-        val adapter = ViewPagerAdapter(this)
-        viewPager.adapter = adapter
-
-        // Connect TabLayout with ViewPager2
-        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            when (position) {
-                0 -> tab.text = "Dienst"
-                1 -> tab.text = "Anzeigen"
-                2 -> tab.text = "Favoriten"
-                else -> tab.text = ""
-            }
-        }.attach()
-
+        // Die aufgeblasene Ansicht zurückgeben
         return view
     }
+
+    // Methode zum Laden eines neuen Fragments
+    private fun loadFragment(fragment: Fragment) {
+        // Transaktion starten und das alte Fragment durch das neue ersetzen
+        childFragmentManager.beginTransaction()
+            .replace(R.id.container2, fragment)
+            .commit()
+    }
 }
-
-
-        /*
-
-        settingsButton.setOnClickListener {
-            findNavController().navigate(R.id.action_accountFragment_to_settingsFragment)
-        }
-
-        // Initialisiere die Ansichten
-        settingsButton = view.findViewById(R.id.settingsButton)
-
-        // Setze einen Klicklistener für den Einstellungsbutton
-        settingsButton.setOnClickListener {
-            // Erstelle eine neue Instanz von SettingsFragment
-            val settingsFragment = SettingsFragment()
-
-            val fragment = SettingsFragment()
-            val transaction = requireActivity().supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container, fragment)
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
-
-
-        val settingsButton: ImageButton = view.findViewById(R.id.settingsButton)
-        settingsButton.setOnClickListener {
-            val fragment = SettingsFragment()
-            val transaction = fragmentManager?.beginTransaction()
-            transaction?.replace(R.id.nav_container, fragment)?.commit()
-        }
-
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        // Set up settings button to navigate to SettingsActivity
-        val settingsButton = view.findViewById<ImageButton>(R.id.settingsButton)
-        settingsButton.setOnClickListener {
-            navigateToSettings()
-        }
-    }
-
-    private fun navigateToSettings() {
-        val action: NavDirections = AccountFragmentDirections.actionAccountFragmentToSettingsFragment()
-        navController.navigate(action)
-    }
-
-     */
