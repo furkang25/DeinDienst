@@ -1,18 +1,27 @@
-package de.tecrox.deindienst.Account
+package de.tecrox.deindienst.Fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import de.tecrox.deindienst.Fragment.AccountFragment
+import android.widget.ImageButton
+import androidx.fragment.app.Fragment
 import de.tecrox.deindienst.R
 
 class SettingsFragment : Fragment() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_settings, container, false)
 
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false)
+        val backButton: ImageButton = view.findViewById(R.id.buttonBackSettings)
+        backButton.setOnClickListener {
+            requireActivity().onBackPressed() // Zurück zur vorherigen Ansicht
+        }
+
+        return view
     }
 }

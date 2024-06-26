@@ -1,21 +1,27 @@
 package de.tecrox.deindienst.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import de.tecrox.deindienst.Account.AnzeigenFragment
 import de.tecrox.deindienst.Account.DienstFragment
 import de.tecrox.deindienst.Account.FavoritFragment
 import de.tecrox.deindienst.R
-
+import de.tecrox.deindienst.SettingsActivity
 
 class AccountFragment : Fragment() {
 
     // Diese Methode wird aufgerufen, wenn das Fragment die Ansicht erstellt
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
+        // Initiales Dienst Seite direkt laden
+        loadFragment(DienstFragment())
+
         // Die Layout-Datei für dieses Fragment aufblähen (inflate)
         val view = inflater.inflate(R.layout.fragment_account, container, false)
 
@@ -50,15 +56,29 @@ class AccountFragment : Fragment() {
             }
         }
 
+        val settingsButton: ImageButton = view.findViewById(R.id.settingsButton)
+        settingsButton.setOnClickListener {
+            startActivity(Intent(activity, SettingsActivity::class.java))
+        }
+
         // Die aufgeblasene Ansicht zurückgeben
         return view
+    }
+
+
+    private fun loadSettingsFragment() {
+        // Transaktion starten, AccountFragment zum Back Stack hinzufügen und SettingsFragment laden
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.containerSettings, SettingsFragment())
+            .addToBackStack(null) // Zum Back Stack hinzufügen
+            .commit()
     }
 
     // Methode zum Laden eines neuen Fragments
     private fun loadFragment(fragment: Fragment) {
         // Transaktion starten und das alte Fragment durch das neue ersetzen
         childFragmentManager.beginTransaction()
-            .replace(R.id.container2, fragment)
+            .replace(R.id.containerSettings, fragment)
             .commit()
     }
 }

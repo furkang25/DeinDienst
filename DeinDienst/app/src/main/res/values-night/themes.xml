@@ -2,13 +2,13 @@
     <!-- Base application theme. -->
     <style name="Theme.DeinDienst" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/black</item>
-        <item name="colorPrimaryVariant">@color/black</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/main_Color</item>
+        <item name="colorPrimaryVariant">@color/main_Color</item>
+        <item name="colorOnPrimary">@color/main_Color</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/black</item>
-        <item name="colorSecondaryVariant">@color/black</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">#C70404</item>
+        <item name="colorSecondaryVariant">@color/main_Color</item>
+        <item name="colorOnSecondary">@color/rahmen_Black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->

@@ -8,9 +8,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Favorit"
-        android:textSize="50dp"
         android:layout_centerInParent="true"
-        />
+        android:text="Favorit"
+        android:textColor="@color/main_Color"
+        android:textSize="50dp" />
 
 </RelativeLayout>

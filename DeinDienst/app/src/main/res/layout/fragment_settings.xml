@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".Account.SettingsFragment">
+    android:layout_height="match_parent">
 
 
     <com.google.android.material.appbar.AppBarLayout
@@ -18,6 +17,7 @@
             android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/buttonBackSettings"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="Settings"
-        android:textColor="@color/black"
+        android:textColor="@color/main_Color"
         android:textSize="50dp" />
 
 
