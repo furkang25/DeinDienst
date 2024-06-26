@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/containerSettings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
@@ -44,7 +43,8 @@
                     android:gravity="center"
                     android:text="Konto"
                     android:textColor="@color/main_Color"
-                    android:textSize="32dp" />
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
 
                 <ImageButton
                     android:id="@+id/settingsButton"
@@ -64,15 +64,22 @@
             android:id="@+id/bottom_navigation"
             style="@style/BottomNavigationViewActive"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:background="@color/Black1"
             app:elevation="0dp"
-            app:itemIconTint="@color/black"
-            app:itemRippleColor="@color/black"
             app:itemTextAppearanceActive="@style/BottomNavigationViewActive"
             app:itemTextAppearanceInactive="@style/BottomNavigationViewInactive"
             app:labelVisibilityMode="labeled"
-            app:menu="@menu/bottom_navigation_settings" /> <!-- Schattierung (Elevation) auf 0dp setzen, um sie zu entfernen -->
+            app:menu="@menu/bottom_navigation_settings">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <FrameLayout
+            android:id='@+id/containerSettings'
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout> <!-- Schattierung (Elevation) auf 0dp setzen, um sie zu entfernen -->
 
     </LinearLayout>
 
