@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".MessagesFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:background="@color/Black1">
+        android:background="@drawable/menubar">
 
         <TextView
             android:layout_width="match_parent"
@@ -18,7 +19,8 @@
             android:text="Nachrichten"
             android:textAlignment="center"
             android:textColor="@color/main_Color"
-            android:textSize="32dp" />
+            android:textSize="32dp"
+            android:textStyle="bold" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

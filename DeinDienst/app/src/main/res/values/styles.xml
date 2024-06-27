@@ -11,4 +11,13 @@
         <item name="android:textColor">@color/white</item> <!-- Inactive text color -->
         <item name="android:fontFamily">@font/inter_medium</item>
     </style>
+    <style name="BottomNavigationViewActive2">
+        <item name="android:textColor">@color/main_Color</item> <!-- Inactive text color -->
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="BottomNavigationViewInactive2">
+        <item name="android:textColor">@color/white</item> <!-- Inactive text color -->
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
 </resources>

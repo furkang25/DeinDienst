@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".Fragment.CreateFragment">
 
     <LinearLayout
@@ -14,7 +15,7 @@
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:background="@color/Black1">
+            android:background="@drawable/menubar">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -35,12 +36,14 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/inter_bold"
                     android:gravity="center|center_vertical"
                     android:text="Erstellen"
                     android:textColor="@color/main_Color"
-                    android:textSize="32dp" />
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
 
                 <FrameLayout
                     android:layout_width="48dp"
@@ -81,7 +84,7 @@
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:textColor="@color/white"
-                        android:textColorHint="@color/white50"
+                        android:textColorHint="@color/text_color50"
                         android:textColorLink="@color/black"
                         android:textIsSelectable="false"
                         android:textSize="12sp" />
@@ -95,7 +98,7 @@
                         android:layout_marginRight="40dp"
                         android:fontFamily="@font/inter"
                         android:text="Gib hier deinen Titel ein (min. 20 Zeichen) (Pflichtfeld)"
-                        android:textColor="@color/white"
+                        android:textColor="@color/text_color"
                         android:textSize="8sp" />
 
 
@@ -128,9 +131,8 @@
                         android:minHeight="20dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white50"
-                        android:textColorLink="@color/black"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color50"
                         android:textIsSelectable="false"
                         android:textSize="12sp" />
 
@@ -144,7 +146,7 @@
                     android:fontFamily="@font/inter"
                     android:gravity="center"
                     android:text="Gib hier deinen Telefonnummer ein (Pflichtfeld) "
-                    android:textColor="@color/white"
+                    android:textColor="@color/text_color"
                     android:textSize="8sp" />
 
                 <LinearLayout
@@ -174,9 +176,8 @@
                         android:minHeight="20dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white50"
-                        android:textColorLink="@color/black"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color50"
                         android:textIsSelectable="false"
                         android:textSize="12sp"
                         tools:ignore="DuplicateIds" />
@@ -192,7 +193,7 @@
                     android:fontFamily="@font/inter"
                     android:gravity="center"
                     android:text="Gib hier deinen Verfügbarkeit ein (Pflichtfeld) "
-                    android:textColor="@color/white"
+                    android:textColor="@color/text_color"
                     android:textSize="8sp" />
 
                 <LinearLayout
@@ -222,9 +223,8 @@
                         android:minHeight="20dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white50"
-                        android:textColorLink="@color/black"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color50"
                         android:textIsSelectable="false"
                         android:textSize="12sp"
                         tools:ignore="DuplicateIds" />
@@ -240,7 +240,7 @@
                     android:fontFamily="@font/inter"
                     android:gravity="center"
                     android:text="Gib hier deinen Kategorie ein (Pflichtfeld) "
-                    android:textColor="@color/white"
+                    android:textColor="@color/text_color"
                     android:textSize="8sp" />
 
                 <LinearLayout
@@ -264,9 +264,8 @@
                         android:paddingLeft="10dp"
                         android:paddingTop="10dp"
                         android:paddingRight="10dp"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white50"
-                        android:textColorLink="@color/black"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color50"
                         android:textIsSelectable="false"
                         android:textSize="12sp" />
 
@@ -278,7 +277,7 @@
                         android:layout_marginRight="40dp"
                         android:fontFamily="@font/inter"
                         android:text="Gib hier deinen Beschreibung ein. (min. 9999 Zeichen) (Pflichtfeld) "
-                        android:textColor="@color/white"
+                        android:textColor="@color/text_color"
                         android:textSize="8sp" />
 
 
@@ -310,9 +309,8 @@
                             android:minHeight="20dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:textColor="@color/white"
-                            android:textColorHint="@color/white50"
-                            android:textColorLink="@color/black"
+                            android:textColor="@color/text_color"
+                            android:textColorHint="@color/text_color50"
                             android:textIsSelectable="false"
                             android:textSize="12sp" />
 
@@ -335,7 +333,7 @@
                         android:layout_marginRight="40dp"
                         android:fontFamily="@font/inter"
                         android:text="Gib hier ein Bild hinzu."
-                        android:textColor="@color/white"
+                        android:textColor="@color/text_color"
                         android:textSize="8sp"
                         tools:ignore="DuplicateIds" />
 
@@ -369,9 +367,8 @@
                             android:minHeight="20dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:textColor="@color/white"
-                            android:textColorHint="@color/white50"
-                            android:textColorLink="@color/black"
+                            android:textColor="@color/text_color"
+                            android:textColorHint="@color/text_color50"
                             android:textIsSelectable="false"
                             android:textSize="12sp"
                             tools:ignore="DuplicateIds" />
@@ -396,7 +393,7 @@
                         android:layout_marginRight="40dp"
                         android:fontFamily="@font/inter"
                         android:text="Gib hier deinen Lizenzen ein. "
-                        android:textColor="@color/white"
+                        android:textColor="@color/text_color"
                         android:textSize="8sp" />
 
 

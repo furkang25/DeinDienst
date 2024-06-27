@@ -3,206 +3,207 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toTopOf="parent">
-
-<com.google.android.material.appbar.AppBarLayout
-    android:layout_width="match_parent"
-    android:layout_height="55dp"
-    android:background="@color/Black1">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Startseite"
-        android:textAlignment="center"
-        android:textColor="@color/main_Color"
-        android:textSize="32dp"
-        android:textStyle="bold" />
-
-</com.google.android.material.appbar.AppBarLayout>
-
-<LinearLayout
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingTop="55dp">
-
-    <TextView
-        android:layout_width="290dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:fontFamily="@font/inter_medium"
-        android:gravity="left"
-        android:text="Willkommen bei Dein Dienst "
-        android:textColor="@color/white"
-        android:textSize="32dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="290dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:fontFamily="@font/inter_medium"
-        android:text="Finden Sie die besten Dienstleistungsanbieter in Ihrer Nähe."
-        android:textColor="@color/white"
-        android:textSize="12sp" />
+    android:background="@color/background_color">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="clip_horizontal|center"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/button1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/rounded_button"
-                android:contentDescription="TODO"
-                android:cropToPadding="false" />
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/menubar">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/inter"
-                android:gravity="center"
-                android:text="Beratung"
-                android:textColor="@color/white"
-                android:textSize="8sp" />
-        </LinearLayout>
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Startseite"
+                android:textAlignment="center"
+                android:textColor="@color/main_Color"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.appbar.AppBarLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="15dp"
-            android:gravity="clip_horizontal|center"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/button2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/rounded_button"
-                android:contentDescription="TODO"
-                android:cropToPadding="false" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="55dp">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/inter"
-                android:gravity="center"
-                android:text="Bildung"
-                android:textColor="@color/white"
-                android:textSize="8sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="15dp"
-            android:gravity="clip_horizontal|center"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/button3"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/rounded_button"
-                android:contentDescription="TODO"
-                android:cropToPadding="false" />
+                android:layout_width="290dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="left"
+                android:text="Willkommen bei Dein Dienst "
+                android:textColor="@color/text_color"
+                android:textSize="32dp"
+                android:textStyle="bold" />
 
             <TextView
+                android:layout_width="290dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Finden Sie die besten Dienstleistungsanbieter in Ihrer Nähe."
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/inter"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
-                android:text="Handwerk"
-                android:textColor="@color/white"
-                android:textSize="8sp" />
-        </LinearLayout>
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="15dp"
-            android:gravity="clip_horizontal|center"
-            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="clip_horizontal|center"
+                    android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/button4"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/rounded_button"
-                android:contentDescription="TODO"
-                android:cropToPadding="false" />
+                    <ImageButton
+                        android:id="@+id/button1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_button"
+                        android:contentDescription="TODO"
+                        android:cropToPadding="false" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/inter"
-                android:gravity="center"
-                android:text="IT-Services"
-                android:textColor="@color/white"
-                android:textSize="8sp" />
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Beratung"
+                        android:textColor="@color/text_color"
+                        android:textSize="8sp" />
+                </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="15dp"
-            android:gravity="clip_horizontal|center"
-            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="clip_horizontal|center"
+                    android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/buttonAdvice"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/rounded_button"
-                android:contentDescription="TODO"
-                android:cropToPadding="false" />
+                    <ImageButton
+                        android:id="@+id/button2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_button"
+                        android:contentDescription="TODO"
+                        android:cropToPadding="false" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/inter"
-                android:gravity="center"
-                android:text="Logistik"
-                android:textColor="@color/white"
-                android:textSize="8sp" />
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Bildung"
+                        android:textColor="@color/text_color"
+                        android:textSize="8sp" />
+                </LinearLayout>
 
-        <!--
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="clip_horizontal|center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/button3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_button"
+                        android:contentDescription="TODO"
+                        android:cropToPadding="false" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Handwerk"
+                        android:textColor="@color/text_color"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="clip_horizontal|center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/button4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_button"
+                        android:contentDescription="TODO"
+                        android:cropToPadding="false" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="IT-Services"
+                        android:textColor="@color/text_color"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="clip_horizontal|center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/buttonAdvice"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_button"
+                        android:contentDescription="TODO"
+                        android:cropToPadding="false" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Logistik"
+                        android:textColor="@color/text_color"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+                <!--
         <ImageButton
             android:id="@+id/buttonCrafts"
             android:layout_width="50dp"
@@ -222,95 +223,95 @@ app:layout_constraintTop_toTopOf="parent">
             android:contentDescription="TODO" />
 -->
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="10dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Top Dienstleister in ein Überblick"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="150dp"
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:background="@drawable/rounded_button"
-                android:contentDescription="feld1" />
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Top Dienstleister in ein Überblick"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_button"
-                android:contentDescription="feld2"
-                tools:ignore="ImageContrastCheck" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_button"
+                        android:contentDescription="feld1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button"
+                        android:contentDescription="feld2"
+                        tools:ignore="ImageContrastCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button"
+                        android:contentDescription="feld3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button"
+                        android:contentDescription="feld4"
+                        tools:ignore="ImageContrastCheck" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="Weitere Dienstleister..."
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_button"
-                android:contentDescription="feld3" />
-
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_button"
-                android:contentDescription="feld4"
-                tools:ignore="ImageContrastCheck" />
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/inter_medium"
-            android:gravity="center"
-            android:text="Weitere Dienstleister..."
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
-
     </LinearLayout>
 
-</LinearLayout>
-</LinearLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

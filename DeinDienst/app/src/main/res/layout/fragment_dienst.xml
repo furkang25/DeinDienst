@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".Account.DienstFragment">
 
     <LinearLayout
@@ -19,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="Dienst"
-            android:textColor="@color/main_Color"
+            android:textColor="@color/text_color"
             android:textSize="50dp" />
     </LinearLayout>
 
