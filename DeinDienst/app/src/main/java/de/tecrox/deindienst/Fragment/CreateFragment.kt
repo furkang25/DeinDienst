@@ -5,95 +5,38 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class CreateFragment : Fragment() {
 
-
+    // Diese Methode wird aufgerufen, um die Benutzeroberfläche des Fragments zu erstellen
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_create, container, false)
-    }
-
-}
-
-    /*
-    private lateinit var buttonAddImage: ImageButton
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var imageAdapter: ImageAdapter
-
-    private val images = mutableListOf<Uri>()
-
-    inner class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-        private val imagePreview: ImageView = itemView.findViewById(R.id.imagePreview)
-
-        fun bind(imageUri: Uri) {
-            imagePreview.setImageURI(imageUri)
-            adjustImageSize(imagePreview)
-            imagePreview.scaleType = ImageView.ScaleType.CENTER_CROP
-        }
-
-        // extension function to convert dp to pixels
-        fun Int.dpToPx(): Int {
-            return TypedValue.applyDimension(
-                TypedValue.COMPLEX_UNIT_DIP,
-                this.toFloat(),
-                Resources.getSystem().displayMetrics
-            ).toInt()
-        }
-
-        private fun adjustImageSize(imageView: ImageView) {
-            val screenWidth = resources.displayMetrics.widthPixels
-            val targetWidth = screenWidth - (2 * 16.dpToPx()) // 16dp margin on each side
-            val layoutParams = imageView.layoutParams as ConstraintLayout.LayoutParams
-            layoutParams.width = targetWidth
-            layoutParams.height = targetWidth // keep aspect ratio
-            imageView.layoutParams = layoutParams
-        }
-
-    }
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        // Layout des Fragments aufblasen (in die View umwandeln)
         val view = inflater.inflate(R.layout.fragment_create, container, false)
 
-        //buttonAddImage = view.findViewById(R.id.buttonAddImage)
-        //recyclerView = view.findViewById(R.id.recyclerView)
+        // BottomNavigationView im Activity-Kontext finden und ausblenden
+        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView?.visibility = View.GONE
 
-        imageAdapter = ImageAdapter(images)
-        recyclerView.apply {
-            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = imageAdapter
+        // ImageButton für das Zurückgehen initialisieren
+        val buttonBackCreate: ImageButton = view.findViewById(R.id.buttonBackCreate)
+        buttonBackCreate.setOnClickListener {
+            // Zurück zum vorherigen Fragment
+            activity?.supportFragmentManager?.popBackStack()
         }
 
-        buttonAddImage.setOnClickListener {
-            addImage()
-        }
-
+        // Die erstellte View des Fragments zurückgeben, die angezeigt werden soll
         return view
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
+    // Diese Methode wird aufgerufen, wenn das Fragment zerstört wird
+    override fun onDestroyView() {
+        super.onDestroyView()
 
-        if (requestCode == REQUEST_CODE_IMAGE && resultCode == RESULT_OK && data != null) {
-            val imageUri = data.data
-            images.add(imageUri!!)
-            imageAdapter.notifyDataSetChanged()
-        }
-    }
-
-    private fun addImage() {
-        val intent = Intent(Intent.ACTION_GET_CONTENT)
-        intent.type = "image/*"
-        startActivityForResult(intent, REQUEST_CODE_IMAGE)
-    }
-
-    companion object {
-        private const val REQUEST_CODE_IMAGE = 1
+        // BottomNavigationView wieder einblenden, wenn das Fragment zerstört wird
+        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView?.visibility = View.VISIBLE
     }
 }
-
-
-     */

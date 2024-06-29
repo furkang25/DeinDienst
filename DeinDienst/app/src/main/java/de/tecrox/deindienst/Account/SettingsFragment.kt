@@ -11,21 +11,29 @@ import de.tecrox.deindienst.R
 
 class SettingsFragment : Fragment() {
 
+    // Diese Methode wird aufgerufen, um die Benutzeroberfläche des Fragments zu erstellen
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.d("SettingsFragment", "Fragment created") // Log-Ausgabe hinzufügen
+        // Log-Ausgabe hinzufügen, um anzuzeigen, dass das Fragment erstellt wurde
+        Log.d("SettingsFragment", "Fragment created")
+
+        // Layout des Fragments aufblasen (in die View umwandeln)
         val view = inflater.inflate(R.layout.fragment_settings, container, false)
 
+        // ImageButton für den Zurück-Button initialisieren
         val backButton: ImageButton = view.findViewById(R.id.buttonBackSettings)
         backButton.setOnClickListener {
-            Log.d("SettingsFragment", "Back button clicked") // Log-Ausgabe hinzufügen
-            requireActivity().onBackPressed() // Zurück zur vorherigen Ansicht
+            // Log-Ausgabe hinzufügen, um anzuzeigen, dass der Zurück-Button geklickt wurde
+            Log.d("SettingsFragment", "Back button clicked")
+
+            // Zurück zur vorherigen Ansicht der Aktivität gehen
+            requireActivity().onBackPressed()
         }
 
+        // Die erstellte View des Fragments zurückgeben, die angezeigt werden soll
         return view
     }
 }
-
