@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
     }
 
     // Methode zum Laden eines neuen Fragments

@@ -45,7 +45,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/email_date"
+                    android:id="@+id/email"
                     android:layout_width="350dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -265,13 +265,17 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/registerButton"
                 android:layout_width="280dp"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/rounded_button"
+                android:background="@drawable/rounded_button_3"
+                android:fontFamily="@font/inter_medium"
                 android:text="Kostenlos registrieren"
+                android:textAllCaps="false"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 tools:ignore="TouchTargetSizeCheck" />
 
 

@@ -13,7 +13,6 @@
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -22,8 +21,6 @@
         android:layout_height="wrap_content"
         android:background="@drawable/menubar"
         app:itemIconSize="24dp"
-        app:itemTextAppearanceActive="@style/BottomNavigationViewActive2"
-        app:itemTextAppearanceInactive="@style/BottomNavigationViewInactive2"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

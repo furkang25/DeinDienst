@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "405864029934",
-    "project_id": "dein-dienst",
-    "storage_bucket": "dein-dienst.appspot.com"
+    "project_number": "857430628219",
+    "project_id": "dein-dienst-eee06",
+    "storage_bucket": "dein-dienst-eee06.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:405864029934:android:d71061f963b7a65b245dff",
+        "mobilesdk_app_id": "1:857430628219:android:596d74b9eb7f15c48e0fde",
         "android_client_info": {
           "package_name": "de.tecrox.deindienst"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "405864029934-19sp1ht6qpoabjjkeqei15og75gb5c93.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAaNFIunIEYQp2oXwP12mzjuPhlJ6kcOYc"
+          "current_key": "AIzaSyDKdFVnq3GbC2sNNDVfQzNcNsu_QoGSZRA"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "405864029934-19sp1ht6qpoabjjkeqei15og75gb5c93.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

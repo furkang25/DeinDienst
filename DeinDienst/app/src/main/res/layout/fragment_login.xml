@@ -52,7 +52,7 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="250dp"
+            android:layout_width="280dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
@@ -64,25 +64,31 @@
             android:textSize="12sp" />
 
         <Button
-            android:id="@+id/button7"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
+            android:id="@+id/registerLink"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_button"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_button_3"
+            android:fontFamily="@font/inter_medium"
             android:text="Registrieren"
+            android:textAllCaps="false"
             android:textColor="@color/white"
+            android:textSize="20sp"
             tools:ignore="TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button8"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
+            android:id="@+id/loginLink"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:background="@android:color/transparent"
+            android:fontFamily="@font/inter_medium"
             android:text="Einloggen"
+            android:textAllCaps="false"
             android:textColor="@color/text_color"
+            android:textSize="20sp"
             tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
