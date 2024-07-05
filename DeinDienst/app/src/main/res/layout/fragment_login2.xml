@@ -139,11 +139,12 @@
                 android:layout_height="20dp"
                 android:layout_marginLeft="5dp"
                 android:background="@android:color/transparent"
-                android:fontFamily="@font/inter_bold"
+                android:fontFamily="@font/inter_medium"
                 android:gravity="left"
                 android:text="Zurücksetzen"
+                android:textAllCaps="false"
                 android:textColor="@color/main_Color"
-                android:textSize="8sp"
+                android:textSize="10sp"
                 tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 

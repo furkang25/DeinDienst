@@ -2,10 +2,12 @@ package de.tecrox.deindienst
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import de.tecrox.deindienst.Fragment.*
+import de.tecrox.deindienst.Login.LoginFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -56,7 +58,11 @@ class MainActivity : AppCompatActivity() {
                 }
                 // Wenn das Element mit der ID 'menu_account' ausgewählt wird
                 R.id.menu_account -> {
-                    loadFragment(AccountFragment())
+                    if (isUserLoggedIn()) {
+                        loadFragment(AccountFragment())
+                    } else {
+                        loadFragment(LoginFragment())
+                    }
                     true // true zurückgeben, um die Auswahl zu bestätigen
                 }
                 // Standardfall: Keine Aktion
@@ -76,4 +82,20 @@ class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null) // Zurückkehren zu diesem Fragment erlauben
         transaction.commit() // Transaktion abschließen und das Fragment anzeigen
     }
+
+    // Dummy-Funktion zur Überprüfung des Anmeldestatus
+    private fun isUserLoggedIn(): Boolean {
+        // Hier kannst du den tatsächlichen Anmeldestatus überprüfen
+        // Zum Beispiel: return userSessionManager.isUserLoggedIn()
+        return false // Dummy-Wert: Benutzer ist nicht angemeldet
+    }
+
+    fun showBottomNav() {
+        bottomNav.visibility = View.VISIBLE
+    }
+
+    fun hideBottomNav() {
+        bottomNav.visibility = View.GONE
+    }
+
 }
