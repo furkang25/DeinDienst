@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         transaction.commit() // Transaktion abschließen und das Fragment anzeigen
     }
 
-    // Dummy-Funktion zur Überprüfung des Anmeldestatus
+    // Dummy-Funktion zur Überprüfung des Anmeldestatusi
     private fun isUserLoggedIn(): Boolean {
         // Hier kannst du den tatsächlichen Anmeldestatus überprüfen
         // Zum Beispiel: return userSessionManager.isUserLoggedIn()

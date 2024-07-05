@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:itemTextAppearanceActive="@style/BottomNavigationViewActive2"
         app:itemTextAppearanceInactive="@style/BottomNavigationViewInactive2"
-        android:tint="@color/main_Color"
+        app:itemIconTint="@color/icon_color"
         app:menu="@menu/bottom_navigation_menu" />
 
 

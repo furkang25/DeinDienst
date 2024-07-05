@@ -4,8 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import de.tecrox.deindienst.MainActivity
 import de.tecrox.deindienst.R
 
@@ -26,6 +28,15 @@ class LoginFragment : Fragment() {
             // Gehe zum vorherigen Fragment zurück
             parentFragmentManager.popBackStack()
         }
+
+        /*
+        val loginButton: Button = view.findViewById(R.id.loginLink)
+        loginButton.setOnClickListener {
+            // Navigation zum Login2Fragment auslösen
+            findNavController().navigate(R.id.action_loginFragment_to_login2Fragment)
+        }
+
+         */
 
         return view
     }
