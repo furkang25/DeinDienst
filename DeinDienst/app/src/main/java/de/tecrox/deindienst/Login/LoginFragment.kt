@@ -29,14 +29,25 @@ class LoginFragment : Fragment() {
             parentFragmentManager.popBackStack()
         }
 
-        /*
-        val loginButton: Button = view.findViewById(R.id.loginLink)
-        loginButton.setOnClickListener {
-            // Navigation zum Login2Fragment auslösen
-            findNavController().navigate(R.id.action_loginFragment_to_login2Fragment)
+        val registerButton: Button = view.findViewById(R.id.registerLink)
+        registerButton.setOnClickListener {
+            // Navigation zum Login2Fragment ohne NavController
+            val registerFragment = RegisterFragment()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_containerLogin, registerFragment)
+                .addToBackStack(null)
+                .commit()
         }
 
-         */
+        val loginButton: Button = view.findViewById(R.id.loginLink)
+        loginButton.setOnClickListener {
+            // Navigation zum Login2Fragment ohne NavController
+            val login2Fragment = Login2Fragment()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_containerLogin, login2Fragment)
+                .addToBackStack(null)
+                .commit()
+        }
 
         return view
     }
