@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Fragment.AccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/menubar"
+            app:elevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Back button"
+                    android:minWidth="48dp"
+                    android:minHeight="32dp" />
+
+                <TextView
+                    android:id="@+id/konto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center"
+                    android:text="Konto"
+                    android:textColor="@color/main_Color"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/settingsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Settings button"
+                    android:minWidth="48dp"
+                    android:minHeight="32dp"
+                    android:src="@drawable/icon_settings" />
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            style="@style/BottomNavigationViewActive"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/menubar"
+            app:elevation="0dp"
+            app:itemTextAppearanceActive="@style/BottomNavigationViewActive"
+            app:itemTextAppearanceInactive="@style/BottomNavigationViewInactive"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation_settings">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <FrameLayout
+            android:id='@+id/containerSettings'
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout> <!-- Schattierung (Elevation) auf 0dp setzen, um sie zu entfernen -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

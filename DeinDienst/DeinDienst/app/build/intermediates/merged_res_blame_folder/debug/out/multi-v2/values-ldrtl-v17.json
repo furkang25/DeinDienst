@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "de.tecrox.deindienst.app-mergeDebugResources-53:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Furo\\.gradle\\caches\\transforms-3\\1c2f1142664c987ab2aadbc5f5ea4d3a\\transformed\\material-1.8.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,191",
+                        "endColumns": "135,140",
+                        "endOffsets": "186,327"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,422 @@
+[
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_rounded_button_2.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/rounded_button_2.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_education.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_education.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_login.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_3.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_3.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_settings.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_settings.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_advice.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_advice.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-xhdpi_app_icon.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-xhdpi/app_icon.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_back.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_back.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_menubar.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/menubar.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_such_feld.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/such_feld.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/xml_data_extraction_rules.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-ldpi_app_icon.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-ldpi/app_icon.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_account.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_account.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_rounded_button_3.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/rounded_button_3.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_messages.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_messages.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_anzeigen.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_anzeigen.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_register.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_register.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_crafts.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_crafts.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_activity_load_screen.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/activity_load_screen.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-mdpi_app_icon.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-mdpi/app_icon.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_account.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_account.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_itservices.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_itservices.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_logistics.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_logistics.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_create.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_create.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_ic_launcher_background.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_education.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_education.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/font_inter_bold.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/font/inter_bold.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_upload.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_upload.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_search.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_search.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_create.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_create.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_rounded_button.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/rounded_button.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_favorit.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_favorit.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_message_icon.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/message_icon.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night-xhdpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-night-xhdpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_1.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_1.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night-hdpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-night-hdpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/font_inter.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/font/inter.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night-xxxhdpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-night-xxxhdpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_advice.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_advice.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-xxhdpi_app_icon.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-xxhdpi/app_icon.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/color-night_icon_color.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/color-night/icon_color.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/navigation_nav_graph.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night-mdpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-night-mdpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_message_icon.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/message_icon.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_such_feld.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/such_feld.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-ldpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-ldpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_logistics.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_logistics.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_back.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_back.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_crafts.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_crafts.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_1.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_1.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_create.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_create.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_account.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_account.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_rounded_button_3.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/rounded_button_3.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_button_kategorien.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/button_kategorien.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night-ldpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-night-ldpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/menu_bottom_navigation_menu.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/menu/bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_home.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_home.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_home.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_settings.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-anydpi-v24_logo.xml.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-anydpi-v24/logo.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_rounded_button_2.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/rounded_button_2.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_button_kategorien.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/button_kategorien.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-xxxhdpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-xxxhdpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_2.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_2.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/color_icon_color.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/color/icon_color.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_dienst.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_dienst.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-xxxhdpi_app_icon.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-xxxhdpi/app_icon.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_search.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_settings.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_settings.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_3.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_3.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/menu_bottom_navigation_settings.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/menu/bottom_navigation_settings.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_fragment_login2.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_login2.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_close.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_close.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-anydpi-v24_app_icon.xml.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-anydpi-v24/app_icon.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_upload.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_upload.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-xxhdpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-xxhdpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_close.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_close.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-hdpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-hdpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/layout_activity_main.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/xml_backup_rules.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-mdpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-mdpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-xhdpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-xhdpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/font_inter_medium.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/font/inter_medium.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_itservices.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_itservices.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_menubar.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/menubar.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night-anydpi-v24_logo.xml.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-night-anydpi-v24/logo.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-hdpi_app_icon.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-hdpi/app_icon.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_rounded_button.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/rounded_button.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable_icon_search.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable/icon_search.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_2.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_2.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night-xxhdpi_logo.png.flat",
+        "source": "de.tecrox.deindienst.app-pngs-50:/drawable-night-xxhdpi/logo.png"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-55:/drawable-night_icon_home.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-57:/drawable-night/icon_home.xml"
+    }
+]
