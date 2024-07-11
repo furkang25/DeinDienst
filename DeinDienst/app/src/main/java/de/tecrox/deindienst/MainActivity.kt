@@ -6,6 +6,8 @@ import android.view.View
 import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.FirebaseApp
+import com.google.firebase.auth.FirebaseAuth
 import de.tecrox.deindienst.Fragment.*
 import de.tecrox.deindienst.Login.LoginFragment
 
@@ -17,6 +19,9 @@ class MainActivity : AppCompatActivity() {
     // Diese Methode wird aufgerufen, wenn die Aktivität erstellt wird
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Firebase initialisieren
+        FirebaseApp.initializeApp(this)
 
         // Das Layout der Aktivität setzen
         setContentView(R.layout.activity_main)

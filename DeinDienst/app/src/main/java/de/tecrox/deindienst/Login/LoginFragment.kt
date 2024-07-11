@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import de.tecrox.deindienst.MainActivity
 import de.tecrox.deindienst.R
 
@@ -32,7 +31,6 @@ class LoginFragment : Fragment() {
 
         val registerButton: Button = view.findViewById(R.id.registerLink)
         registerButton.setOnClickListener {
-            // Navigation zum Login2Fragment ohne NavController
             val registerFragment = RegisterFragment()
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_containerLogin, registerFragment)
@@ -42,7 +40,6 @@ class LoginFragment : Fragment() {
 
         val loginButton: Button = view.findViewById(R.id.loginLink)
         loginButton.setOnClickListener {
-            // Navigation zum Login2Fragment ohne NavController
             val login2Fragment = Login2Fragment()
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_containerLogin, login2Fragment)
