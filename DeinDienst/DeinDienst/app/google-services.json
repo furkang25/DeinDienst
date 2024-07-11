@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "857430628219",
+    "project_id": "dein-dienst-eee06",
+    "storage_bucket": "dein-dienst-eee06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857430628219:android:596d74b9eb7f15c48e0fde",
+        "android_client_info": {
+          "package_name": "de.tecrox.deindienst"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKdFVnq3GbC2sNNDVfQzNcNsu_QoGSZRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

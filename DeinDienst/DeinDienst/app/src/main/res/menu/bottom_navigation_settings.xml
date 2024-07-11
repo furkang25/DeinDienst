@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_service"
+        android:title="Dienst" />
+    <item
+        android:id="@+id/navigation_display"
+        android:title="Anzeigen" />
+    <item
+        android:id="@+id/navigation_favorite"
+        android:title="Favorit" />
+</menu>

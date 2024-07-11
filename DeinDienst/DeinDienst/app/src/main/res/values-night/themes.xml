@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DeinDienst" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_Color</item>
+        <item name="colorPrimaryVariant">@color/main_Color</item>
+        <item name="colorOnPrimary">@color/main_Color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/main_Color</item>
+        <item name="colorSecondaryVariant">@color/main_Color</item>
+        <item name="colorOnSecondary">@color/main_Color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+</resources>
