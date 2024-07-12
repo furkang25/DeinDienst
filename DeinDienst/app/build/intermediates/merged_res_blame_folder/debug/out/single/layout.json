@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_home.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_login2.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_login2.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_create.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_create.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_anzeigen.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_anzeigen.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_dienst.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_dienst.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_messages.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_messages.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_login.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/activity_load_screen.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/activity_load_screen.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_settings.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_account.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_account.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_search.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_favorit.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_favorit.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/fragment_register.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/fragment_register.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-54:/layout/activity_main.xml",
+        "source": "de.tecrox.deindienst.app-main-57:/layout/activity_main.xml"
+    }
+]
