@@ -61,6 +61,10 @@ class AccountFragment : Fragment() {
             startActivity(Intent(activity, SettingsActivity::class.java))
         }
 
+        // BottomNavigationView im Activity-Kontext finden und einblenden
+        val bottomNavigationBarView = activity?.findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationBarView?.visibility = View.VISIBLE
+
         // Die aufgeblasene Ansicht zurückgeben
         return view
     }
@@ -81,4 +85,5 @@ class AccountFragment : Fragment() {
             .replace(R.id.containerSettings, fragment)
             .commit()
     }
+
 }

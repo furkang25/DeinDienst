@@ -17,8 +17,8 @@ class CreateFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_create, container, false)
 
         // BottomNavigationView im Activity-Kontext finden und ausblenden
-        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.bottom_navigation)
-        bottomNavigationView?.visibility = View.GONE
+        val bottomNavigationBarView = activity?.findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationBarView?.visibility = View.GONE
 
         // ImageButton für das Zurückgehen initialisieren
         val buttonBackCreate: ImageButton = view.findViewById(R.id.buttonBackCreate)
