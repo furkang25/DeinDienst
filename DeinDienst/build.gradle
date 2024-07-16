@@ -14,5 +14,5 @@ plugins {
 }
 
 allprojects {
-    // Keine Repositories hier
+
 }

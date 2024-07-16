@@ -2,6 +2,7 @@ package de.tecrox.deindienst
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.WindowManager
 import androidx.fragment.app.Fragment
@@ -16,12 +17,19 @@ class MainActivity : AppCompatActivity() {
     // Spätinitialisierte Variable für das BottomNavigationView
     lateinit var bottomNav: BottomNavigationView
 
+    // FirebaseAuth-Instanz
+    private lateinit var mAuth: FirebaseAuth
+
     // Diese Methode wird aufgerufen, wenn die Aktivität erstellt wird
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         // Das Layout der Aktivität setzen
         setContentView(R.layout.activity_main)
+
+        // Firebase initialisieren
+        FirebaseApp.initializeApp(this)
+        mAuth = FirebaseAuth.getInstance()
 
         // Action Bar entfernen und die Aktivität im Vollbildmodus anzeigen
         window.setFlags(
@@ -36,8 +44,8 @@ class MainActivity : AppCompatActivity() {
         bottomNav = findViewById(R.id.bottom_navigation) as BottomNavigationView
 
         // Listener setzen, der auf die Auswahl von Navigationselementen reagiert
-        bottomNav.setOnItemSelectedListener {
-            when (it.itemId) {
+        bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
                 // Wenn das Element mit der ID 'menu_home' ausgewählt wird
                 R.id.menu_home -> {
                     loadFragment(HomeFragment())
@@ -73,7 +81,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
     }
 
     // Methode zum Laden eines neuen Fragments
@@ -85,19 +92,20 @@ class MainActivity : AppCompatActivity() {
         transaction.commit() // Transaktion abschließen und das Fragment anzeigen
     }
 
-    // Dummy-Funktion zur Überprüfung des Anmeldestatusi
+    // Überprüft, ob der Benutzer angemeldet ist
     private fun isUserLoggedIn(): Boolean {
-        // Hier kannst du den tatsächlichen Anmeldestatus überprüfen
-        // Zum Beispiel: return userSessionManager.isUserLoggedIn()
-        return false // Dummy-Wert: Benutzer ist nicht angemeldet
+        val currentUser = mAuth.currentUser
+        Log.d("MainActivity", "Current User: $currentUser")
+        return currentUser != null
     }
 
+    // BottomNavigationView anzeigen
     fun showBottomNav() {
         bottomNav.visibility = View.VISIBLE
     }
 
+    // BottomNavigationView ausblenden
     fun hideBottomNav() {
         bottomNav.visibility = View.GONE
     }
-
 }

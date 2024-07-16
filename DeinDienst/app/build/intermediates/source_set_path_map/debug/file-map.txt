@@ -43,11 +43,11 @@ de.tecrox.deindienst.app-fragment-ktx-1.5.4-41 C:\Users\Furo\.gradle\caches\tran
 de.tecrox.deindienst.app-recyclerview-1.1.0-42 C:\Users\Furo\.gradle\caches\transforms-3\c1bc51dcc995fa4926a249631008abcd\transformed\recyclerview-1.1.0\res
 de.tecrox.deindienst.app-navigation-runtime-2.5.3-43 C:\Users\Furo\.gradle\caches\transforms-3\c38c6f3899d76685b0dffd67e5998c04\transformed\navigation-runtime-2.5.3\res
 de.tecrox.deindienst.app-emoji2-views-helper-1.2.0-44 C:\Users\Furo\.gradle\caches\transforms-3\d374d63e59e9fade28e6f34a3784a258\transformed\emoji2-views-helper-1.2.0\res
-de.tecrox.deindienst.app-coordinatorlayout-1.1.0-45 C:\Users\Furo\.gradle\caches\transforms-3\e38503ce32252312c41651b5be9763a1\transformed\coordinatorlayout-1.1.0\res
-de.tecrox.deindienst.app-lifecycle-viewmodel-savedstate-2.5.1-46 C:\Users\Furo\.gradle\caches\transforms-3\e8f93cdcc245fc719f9e4fe49d746f5b\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
-de.tecrox.deindienst.app-startup-runtime-1.1.1-47 C:\Users\Furo\.gradle\caches\transforms-3\eadafa1884c599db1431230c236e9e13\transformed\startup-runtime-1.1.1\res
-de.tecrox.deindienst.app-constraintlayout-2.1.4-48 C:\Users\Furo\.gradle\caches\transforms-3\ef632f1fb8f79b8567f77d93d355e2b1\transformed\constraintlayout-2.1.4\res
-de.tecrox.deindienst.app-play-services-base-18.0.1-49 C:\Users\Furo\.gradle\caches\transforms-3\f25c1cab40be474d1d21cf01f1bf7573\transformed\play-services-base-18.0.1\res
+de.tecrox.deindienst.app-play-services-base-18.1.0-45 C:\Users\Furo\.gradle\caches\transforms-3\e13edd9327949d13eea7a57af7182b49\transformed\play-services-base-18.1.0\res
+de.tecrox.deindienst.app-coordinatorlayout-1.1.0-46 C:\Users\Furo\.gradle\caches\transforms-3\e38503ce32252312c41651b5be9763a1\transformed\coordinatorlayout-1.1.0\res
+de.tecrox.deindienst.app-lifecycle-viewmodel-savedstate-2.5.1-47 C:\Users\Furo\.gradle\caches\transforms-3\e8f93cdcc245fc719f9e4fe49d746f5b\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+de.tecrox.deindienst.app-startup-runtime-1.1.1-48 C:\Users\Furo\.gradle\caches\transforms-3\eadafa1884c599db1431230c236e9e13\transformed\startup-runtime-1.1.1\res
+de.tecrox.deindienst.app-constraintlayout-2.1.4-49 C:\Users\Furo\.gradle\caches\transforms-3\ef632f1fb8f79b8567f77d93d355e2b1\transformed\constraintlayout-2.1.4\res
 de.tecrox.deindienst.app-google-services-50 C:\Users\Furo\Documents\GitHub\DeinDienst\DeinDienst\app\build\generated\res\google-services\debug
 de.tecrox.deindienst.app-pngs-51 C:\Users\Furo\Documents\GitHub\DeinDienst\DeinDienst\app\build\generated\res\pngs\debug
 de.tecrox.deindienst.app-resValues-52 C:\Users\Furo\Documents\GitHub\DeinDienst\DeinDienst\app\build\generated\res\resValues\debug

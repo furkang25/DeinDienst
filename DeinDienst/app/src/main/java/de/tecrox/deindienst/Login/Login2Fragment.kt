@@ -31,8 +31,6 @@ class Login2Fragment : Fragment() {
 
         // Initialisiere Firebase Auth
         mAuth = FirebaseAuth.getInstance()
-       // fatih version
-
 
         // UI-Elemente referenzieren
         emailEditText = view.findViewById(R.id.email)

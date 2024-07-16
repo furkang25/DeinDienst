@@ -56,7 +56,7 @@
                         android:text="Standort"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:textSize="12sp"
+                        android:textSize="16sp"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
@@ -68,8 +68,8 @@
                         android:fontFamily="@font/inter_medium"
                         android:text="Kategorien"
                         android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="12sp"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
                         tools:ignore="TouchTargetSizeCheck" />
 
                 </LinearLayout>
