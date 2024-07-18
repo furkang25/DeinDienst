@@ -55,7 +55,7 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <Button
-            android:id="@+id/abmelden_Button"
+            android:id="@+id/logoutButton"
             android:layout_width="270dp"
             android:layout_height="40dp"
             android:layout_gravity="center"

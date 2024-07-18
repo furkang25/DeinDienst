@@ -8,6 +8,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import de.tecrox.deindienst.Fragment.HomeFragment
 import de.tecrox.deindienst.MainActivity
 import de.tecrox.deindienst.R
 
@@ -19,14 +21,11 @@ class LoginFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_login, container, false)
 
-        // BottomNavigationView ausblenden
-        (activity as? MainActivity)?.hideBottomNav()
-
         // Finde den ImageButton und setze einen OnClickListener
         val closeButton: ImageButton = view.findViewById(R.id.closeButtonLogin)
         closeButton.setOnClickListener {
-            // Gehe zum vorherigen Fragment zurück
-            parentFragmentManager.popBackStack()
+            // Lade das HomeFragment
+            loadFragment(HomeFragment())
         }
 
         val registerButton: Button = view.findViewById(R.id.registerLink)
@@ -47,12 +46,19 @@ class LoginFragment : Fragment() {
                 .commit()
         }
 
+
+        // BottomNavigationView im Activity-Kontext finden und einblenden
+        val bottomNavigationBarView = activity?.findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationBarView?.visibility = View.GONE
+
         return view
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        // BottomNavigationView wieder einblenden, wenn das Fragment zerstört wird
-        (activity as? MainActivity)?.showBottomNav()
+    // Methode zum Laden eines neuen Fragments
+    private fun loadFragment(fragment: Fragment) {
+        val transaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_containerLogin, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 }

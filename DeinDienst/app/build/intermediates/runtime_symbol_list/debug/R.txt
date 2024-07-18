@@ -2946,7 +2946,6 @@ int id SYM 0x7f0a000b
 int id SucheFragment 0x7f0a000c
 int id TOP_END 0x7f0a000d
 int id TOP_START 0x7f0a000e
-int id abmelden_Button 0x7f0a0241
 int id accelerate 0x7f0a000f
 int id accessibility_action_clickable_span 0x7f0a0010
 int id accessibility_custom_action_0 0x7f0a0011
@@ -3221,6 +3220,7 @@ int id list_item 0x7f0a011d
 int id locale 0x7f0a011e
 int id loginButton 0x7f0a011f
 int id loginLink 0x7f0a0120
+int id logoutButton 0x7f0a0242
 int id ltr 0x7f0a0121
 int id m3_side_sheet 0x7f0a0122
 int id marquee 0x7f0a0123

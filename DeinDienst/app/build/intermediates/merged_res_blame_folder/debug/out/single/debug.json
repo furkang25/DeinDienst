@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-58:\\menu\\bottom_navigation_settings.xml"
     },
     {
+        "merged": "de.tecrox.deindienst.app-merged_res-56:/layout_activity_main.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-58:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-merged_res-56:\\drawable-night_icon_itservices.xml.flat",
         "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-58:\\drawable-night\\icon_itservices.xml"
     },

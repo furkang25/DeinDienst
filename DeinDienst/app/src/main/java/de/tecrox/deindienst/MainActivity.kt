@@ -94,10 +94,11 @@ class MainActivity : AppCompatActivity() {
 
     // Überprüft, ob der Benutzer angemeldet ist
     private fun isUserLoggedIn(): Boolean {
-        val currentUser = mAuth.currentUser
-        Log.d("MainActivity", "Current User: $currentUser")
-        return currentUser != null
+        val user = mAuth.currentUser
+        Log.d("MainActivity", "isUserLoggedIn: ${user != null}")
+        return user != null
     }
+
 
     // BottomNavigationView anzeigen
     fun showBottomNav() {

@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import de.tecrox.deindienst.MainActivity
 import de.tecrox.deindienst.R
 
 class HomeFragment : Fragment() {
@@ -13,7 +15,14 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+
+        // BottomNavigationView im Activity-Kontext finden und einblenden
+        val bottomNavigationBarView = activity?.findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationBarView?.visibility = View.VISIBLE
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        return view
     }
+
 }

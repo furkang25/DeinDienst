@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import de.tecrox.deindienst.Fragment.AccountFragment
+import de.tecrox.deindienst.Fragment.HomeFragment
 import de.tecrox.deindienst.R
 
 class Login2Fragment : Fragment() {
@@ -40,8 +41,7 @@ class Login2Fragment : Fragment() {
         // Finde den ImageButton und setze einen OnClickListener
         val backButton: ImageButton = view.findViewById(R.id.back_button_login2)
         backButton.setOnClickListener {
-            // Gehe zum vorherigen Fragment zurück
-            parentFragmentManager.popBackStack()
+            loadFragment(LoginFragment())
         }
 
         loginButton.setOnClickListener {
@@ -78,5 +78,13 @@ class Login2Fragment : Fragment() {
             .replace(R.id.container_login2, fragment)
             .addToBackStack(null)
             .commit()
+    }
+
+    // Methode zum Laden eines neuen Fragments
+    private fun loadFragment(fragment: Fragment) {
+        val transaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.container_login2, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 }

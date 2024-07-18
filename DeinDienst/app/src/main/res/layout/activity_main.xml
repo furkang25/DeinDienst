@@ -8,6 +8,8 @@
     android:id="@+id/container_main2"
     tools:context=".MainActivity">
 
+
+
     <FrameLayout
         android:id="@+id/container_main"
         android:layout_width="match_parent"

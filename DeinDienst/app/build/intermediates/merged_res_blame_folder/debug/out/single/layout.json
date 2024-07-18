@@ -40,6 +40,10 @@
         "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-58:\\layout\\activity_main.xml"
     },
     {
+        "merged": "de.tecrox.deindienst.app-mergeDebugResources-55:/layout/activity_main.xml",
+        "source": "de.tecrox.deindienst.app-main-58:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-mergeDebugResources-55:\\layout\\fragment_search.xml",
         "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-58:\\layout\\fragment_search.xml"
     },

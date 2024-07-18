@@ -5,8 +5,11 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
+import com.google.firebase.auth.FirebaseAuth
+import de.tecrox.deindienst.Login.LoginFragment
 import de.tecrox.deindienst.R
 
 class SettingsFragment : Fragment() {
@@ -20,6 +23,7 @@ class SettingsFragment : Fragment() {
         // Log-Ausgabe hinzufügen, um anzuzeigen, dass das Fragment erstellt wurde
         Log.d("SettingsFragment", "Fragment created")
 
+
         // Layout des Fragments aufblasen (in die View umwandeln)
         val view = inflater.inflate(R.layout.fragment_settings, container, false)
 
@@ -32,6 +36,7 @@ class SettingsFragment : Fragment() {
             // Zurück zur vorherigen Ansicht der Aktivität gehen
             requireActivity().onBackPressed()
         }
+
 
         // Die erstellte View des Fragments zurückgeben, die angezeigt werden soll
         return view
