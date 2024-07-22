@@ -8,8 +8,6 @@
     android:id="@+id/container_main2"
     tools:context=".MainActivity">
 
-
-
     <FrameLayout
         android:id="@+id/container_main"
         android:layout_width="match_parent"
@@ -32,6 +30,5 @@
         app:itemTextAppearanceInactive="@style/BottomNavigationViewInactive2"
         app:itemIconTint="@color/icon_color"
         app:menu="@menu/bottom_navigation_menu" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

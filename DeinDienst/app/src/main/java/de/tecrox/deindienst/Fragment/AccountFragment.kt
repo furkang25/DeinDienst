@@ -70,6 +70,7 @@ class AccountFragment : Fragment() {
     }
 
 
+    /*
     private fun loadSettingsFragment() {
         // Transaktion starten, AccountFragment zum Back Stack hinzufügen und SettingsFragment laden
         parentFragmentManager.beginTransaction()
@@ -77,6 +78,8 @@ class AccountFragment : Fragment() {
             .addToBackStack(null) // Zum Back Stack hinzufügen
             .commit()
     }
+
+     */
 
     // Methode zum Laden eines neuen Fragments
     private fun loadFragment(fragment: Fragment) {

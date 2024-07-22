@@ -17,9 +17,12 @@ class HomeFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
+        /*
         // BottomNavigationView im Activity-Kontext finden und einblenden
         val bottomNavigationBarView = activity?.findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNavigationBarView?.visibility = View.VISIBLE
+
+         */
 
         // Inflate the layout for this fragment
         return view

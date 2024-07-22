@@ -1,5 +1,6 @@
 package de.tecrox.deindienst.Login
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -24,8 +25,9 @@ class LoginFragment : Fragment() {
         // Finde den ImageButton und setze einen OnClickListener
         val closeButton: ImageButton = view.findViewById(R.id.closeButtonLogin)
         closeButton.setOnClickListener {
-            // Lade das HomeFragment
-            loadFragment(HomeFragment())
+            // Starte die MainActivity
+            startActivity(Intent(activity, MainActivity::class.java))
+            activity?.finish()
         }
 
         val registerButton: Button = view.findViewById(R.id.registerLink)
@@ -52,13 +54,5 @@ class LoginFragment : Fragment() {
         bottomNavigationBarView?.visibility = View.GONE
 
         return view
-    }
-
-    // Methode zum Laden eines neuen Fragments
-    private fun loadFragment(fragment: Fragment) {
-        val transaction = parentFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragment_containerLogin, fragment)
-        transaction.addToBackStack(null)
-        transaction.commit()
     }
 }

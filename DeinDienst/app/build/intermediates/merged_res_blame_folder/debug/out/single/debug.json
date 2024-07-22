@@ -292,10 +292,6 @@
         "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-pngs-51:\\drawable-night-xxhdpi\\logo.png"
     },
     {
-        "merged": "de.tecrox.deindienst.app-merged_res-56:/layout_fragment_settings.xml.flat",
-        "source": "de.tecrox.deindienst.app-main-58:/layout/fragment_settings.xml"
-    },
-    {
         "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-merged_res-56:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-58:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
