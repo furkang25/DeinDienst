@@ -2,306 +2,298 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
-    tools:context=".Fragment.AccountFragment">
+    android:background="@color/background_color">
 
-    <FrameLayout
-        android:id="@+id/container_register"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/back_button_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/icon_back"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/logo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/back_button_register"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:background="@android:color/transparent"
-                        android:src="@drawable/icon_back"
-                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="40dp"
-                        android:src="@drawable/logo" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/emailData"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_button"
+                            android:fontFamily="@font/inter_medium"
+                            android:hint="E-Mail"
+                            android:inputType="textPersonName"
+                            android:minHeight="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/text_color50"
+                            android:textColorLink="@color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="40dp"
+                            android:fontFamily="@font/inter"
+                            android:text="Gib hier deinen E-Mail ein. (Pflichtfeld)"
+                            android:textColor="@color/text_color"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:orientation="vertical">
 
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:orientation="vertical">
-
-                            <EditText
-                                android:id="@+id/emailData"
-                                android:layout_width="350dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/rounded_button"
-                                android:fontFamily="@font/inter_medium"
-                                android:hint="E-Mail"
-                                android:inputType="textPersonName"
-                                android:minHeight="20dp"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:textColor="@color/white"
-                                android:textColorHint="@color/text_color50"
-                                android:textColorLink="@color/black"
-                                android:textIsSelectable="false"
-                                android:textSize="12sp" />
-
-                            <TextView
-                                android:layout_width="250dp"
-                                android:layout_height="10dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginRight="40dp"
-                                android:fontFamily="@font/inter"
-                                android:text="Gib hier deinen E-Mail ein. (Pflichtfeld)"
-                                android:textColor="@color/text_color"
-                                android:textSize="8sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:orientation="vertical">
-
-
-                            <EditText
-                                android:id="@+id/passwordData"
-                                android:layout_width="350dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/rounded_button"
-                                android:fontFamily="@font/inter_medium"
-                                android:hint="Passwort"
-                                android:inputType="textPersonName"
-                                android:minHeight="20dp"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:textColor="@color/white"
-                                android:textColorHint="@color/text_color50"
-                                android:textColorLink="@color/black"
-                                android:textIsSelectable="false"
-                                android:textSize="12sp" />
-
-                            <TextView
-                                android:layout_width="250dp"
-                                android:layout_height="10dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginRight="40dp"
-                                android:fontFamily="@font/inter"
-                                android:text="Gib hier deinen Passwort ein.(Pflichtfeld)"
-                                android:textColor="@color/text_color"
-                                android:textSize="8sp" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:orientation="vertical">
-
-
-                            <EditText
-                                android:id="@+id/nameData"
-                                android:layout_width="350dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/rounded_button"
-                                android:fontFamily="@font/inter_medium"
-                                android:hint="Name"
-                                android:inputType="textPersonName"
-                                android:minHeight="20dp"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:textColor="@color/white"
-                                android:textColorHint="@color/text_color50"
-                                android:textColorLink="@color/black"
-                                android:textIsSelectable="false"
-                                android:textSize="12sp" />
-
-                            <TextView
-                                android:layout_width="250dp"
-                                android:layout_height="10dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginRight="40dp"
-                                android:fontFamily="@font/inter"
-                                android:text="Gib hier deinen Name ein. (Pflichtfeld)"
-                                android:textColor="@color/text_color"
-                                android:textSize="8sp" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:orientation="vertical">
-
-
-                            <EditText
-                                android:id="@+id/addressData"
-                                android:layout_width="350dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/rounded_button"
-                                android:fontFamily="@font/inter_medium"
-                                android:hint="Straße"
-                                android:inputType="textPersonName"
-                                android:minHeight="20dp"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:textColor="@color/white"
-                                android:textColorHint="@color/text_color50"
-                                android:textColorLink="@color/black"
-                                android:textIsSelectable="false"
-                                android:textSize="12sp" />
-
-                            <TextView
-                                android:layout_width="250dp"
-                                android:layout_height="10dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginRight="40dp"
-                                android:fontFamily="@font/inter"
-                                android:text="Gib hier deinen Straße ein."
-                                android:textColor="@color/text_color"
-                                android:textSize="8sp" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:orientation="vertical">
-
-
-                            <EditText
-                                android:id="@+id/postalcodeData"
-                                android:layout_width="350dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/rounded_button"
-                                android:fontFamily="@font/inter_medium"
-                                android:hint="Postleitzahl"
-                                android:inputType="textPersonName"
-                                android:minHeight="20dp"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:textColor="@color/white"
-                                android:textColorHint="@color/text_color50"
-                                android:textColorLink="@color/black"
-                                android:textIsSelectable="false"
-                                android:textSize="12sp" />
-
-                            <TextView
-                                android:layout_width="250dp"
-                                android:layout_height="10dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginRight="40dp"
-                                android:fontFamily="@font/inter"
-                                android:text="Gib hier deinen Postleitzahl ein."
-                                android:textColor="@color/text_color"
-                                android:textSize="8sp" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:orientation="vertical">
-
-
-                            <EditText
-                                android:id="@+id/telephoneData"
-                                android:layout_width="350dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/rounded_button"
-                                android:fontFamily="@font/inter_medium"
-                                android:hint="Telefonnummer"
-                                android:inputType="textPersonName"
-                                android:minHeight="20dp"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:textColor="@color/white"
-                                android:textColorHint="@color/text_color50"
-                                android:textColorLink="@color/black"
-                                android:textIsSelectable="false"
-                                android:textSize="12sp" />
-
-                            <TextView
-                                android:layout_width="250dp"
-                                android:layout_height="10dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginRight="40dp"
-                                android:fontFamily="@font/inter"
-                                android:text="Gib hier deinen Telefonnummer ein."
-                                android:textColor="@color/text_color"
-                                android:textSize="8sp" />
-
-
-                        </LinearLayout>
-
-                        <Button
-                            android:id="@+id/registerButton"
-                            android:layout_width="280dp"
+                        <EditText
+                            android:id="@+id/passwordData"
+                            android:layout_width="350dp"
                             android:layout_height="50dp"
                             android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/rounded_button_3"
+                            android:background="@drawable/rounded_button"
                             android:fontFamily="@font/inter_medium"
-                            android:text="Kostenlos registrieren"
-                            android:textAllCaps="false"
+                            android:hint="Passwort"
+                            android:inputType="textPersonName"
+                            android:minHeight="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
                             android:textColor="@color/white"
-                            android:textSize="20sp"
-                            tools:ignore="TouchTargetSizeCheck" />
+                            android:textColorHint="@color/text_color50"
+                            android:textColorLink="@color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="40dp"
+                            android:fontFamily="@font/inter"
+                            android:text="Gib hier deinen Passwort ein.(Pflichtfeld)"
+                            android:textColor="@color/text_color"
+                            android:textSize="8sp" />
 
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/nameData"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_button"
+                            android:fontFamily="@font/inter_medium"
+                            android:hint="Name"
+                            android:inputType="textPersonName"
+                            android:minHeight="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/text_color50"
+                            android:textColorLink="@color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="40dp"
+                            android:fontFamily="@font/inter"
+                            android:text="Gib hier deinen Name ein. (Pflichtfeld)"
+                            android:textColor="@color/text_color"
+                            android:textSize="8sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/addressData"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_button"
+                            android:fontFamily="@font/inter_medium"
+                            android:hint="Straße"
+                            android:inputType="textPersonName"
+                            android:minHeight="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/text_color50"
+                            android:textColorLink="@color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="40dp"
+                            android:fontFamily="@font/inter"
+                            android:text="Gib hier deinen Straße ein."
+                            android:textColor="@color/text_color"
+                            android:textSize="8sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/postalcodeData"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_button"
+                            android:fontFamily="@font/inter_medium"
+                            android:hint="Postleitzahl"
+                            android:inputType="textPersonName"
+                            android:minHeight="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/text_color50"
+                            android:textColorLink="@color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="40dp"
+                            android:fontFamily="@font/inter"
+                            android:text="Gib hier deinen Postleitzahl ein."
+                            android:textColor="@color/text_color"
+                            android:textSize="8sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/telephoneData"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_button"
+                            android:fontFamily="@font/inter_medium"
+                            android:hint="Telefonnummer"
+                            android:inputType="textPersonName"
+                            android:minHeight="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/text_color50"
+                            android:textColorLink="@color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="40dp"
+                            android:fontFamily="@font/inter"
+                            android:text="Gib hier deinen Telefonnummer ein."
+                            android:textColor="@color/text_color"
+                            android:textSize="8sp" />
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/registerButton"
+                        android:layout_width="280dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_button_3"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Kostenlos registrieren"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
                 </LinearLayout>
+
             </LinearLayout>
-        </ScrollView>
-    </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

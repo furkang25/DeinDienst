@@ -121,7 +121,7 @@ class RegisterFragment : Fragment() {
                                                 if (dbTask.isSuccessful) {
                                                     Toast.makeText(activity, "Registrierung erfolgreich", Toast.LENGTH_SHORT).show()
                                                     // Nach erfolgreicher Registrierung weiterleiten
-                                                    loadAccountFragment()
+                                                    redirectToAccountFragment()
                                                 } else {
                                                     Toast.makeText(activity, "Registrierung fehlgeschlagen. Benutzerinformationen konnten nicht gespeichert werden.", Toast.LENGTH_SHORT).show()
                                                 }
@@ -146,9 +146,10 @@ class RegisterFragment : Fragment() {
             }
     }
 
-    private fun loadAccountFragment() {
+    private fun redirectToAccountFragment() {
+        val fragment = AccountFragment()
         parentFragmentManager.beginTransaction()
-            .replace(R.id.fragment_account_container, AccountFragment())
+            .replace(R.id.container_register, fragment)
             .addToBackStack(null)
             .commit()
     }

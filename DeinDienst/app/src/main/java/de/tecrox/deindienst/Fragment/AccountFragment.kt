@@ -69,18 +69,6 @@ class AccountFragment : Fragment() {
         return view
     }
 
-
-    /*
-    private fun loadSettingsFragment() {
-        // Transaktion starten, AccountFragment zum Back Stack hinzufügen und SettingsFragment laden
-        parentFragmentManager.beginTransaction()
-            .replace(R.id.containerSettings, SettingsFragment())
-            .addToBackStack(null) // Zum Back Stack hinzufügen
-            .commit()
-    }
-
-     */
-
     // Methode zum Laden eines neuen Fragments
     private fun loadFragment(fragment: Fragment) {
         // Transaktion starten und das alte Fragment durch das neue ersetzen
@@ -88,5 +76,4 @@ class AccountFragment : Fragment() {
             .replace(R.id.containerSettings, fragment)
             .commit()
     }
-
 }

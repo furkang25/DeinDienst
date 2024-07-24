@@ -99,7 +99,6 @@ class MainActivity : AppCompatActivity() {
         return user != null
     }
 
-
     // BottomNavigationView anzeigen
     fun showBottomNav() {
         bottomNav.visibility = View.VISIBLE
