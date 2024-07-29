@@ -14,7 +14,7 @@
         <item>@font/inter</item>
         <item>@font/inter_bold</item>
         <item>@font/inter_medium</item>
-    </array></file><file path="C:\Users\Furo\Documents\GitHub\DeinDienst\DeinDienst\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Dein Dienst</string><string name="hello_blank_fragment">Hello blank fragment</string></file><file path="C:\Users\Furo\Documents\GitHub\DeinDienst\DeinDienst\app\src\main\res\values\styles.xml" qualifiers=""><style name="BottomNavigationViewActive">
+    </array></file><file path="C:\Users\Furo\Documents\GitHub\DeinDienst\DeinDienst\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Dein Dienst</string><string name="hello_blank_fragment">Hello blank fragment</string><string name="default_notification_channel_id">default_channel</string><string name="default_notification_channel_name">Default Channel</string><string name="default_notification_channel_description">Standard Benachrichtigungskanal</string></file><file path="C:\Users\Furo\Documents\GitHub\DeinDienst\DeinDienst\app\src\main\res\values\styles.xml" qualifiers=""><style name="BottomNavigationViewActive">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/main_Color</item> 
         <item name="android:fontFamily">@font/inter_bold</item>

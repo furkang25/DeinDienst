@@ -3784,6 +3784,9 @@ int string common_open_on_phone 0x7f140039
 int string common_signin_button_text 0x7f14003a
 int string common_signin_button_text_long 0x7f14003b
 int string copy_toast_msg 0x7f14003c
+int string default_notification_channel_description 0x7f1400bc
+int string default_notification_channel_id 0x7f1400bd
+int string default_notification_channel_name 0x7f1400be
 int string error_a11y_label 0x7f14003d
 int string error_icon_content_description 0x7f14003e
 int string exposed_dropdown_menu_content_description 0x7f14003f
