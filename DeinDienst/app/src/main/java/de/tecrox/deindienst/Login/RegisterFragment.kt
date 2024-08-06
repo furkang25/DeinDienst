@@ -1,5 +1,6 @@
 package de.tecrox.deindienst.Login
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
@@ -16,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import de.tecrox.deindienst.Fragment.AccountFragment
+import de.tecrox.deindienst.MainActivity
 import de.tecrox.deindienst.R
 
 class RegisterFragment : Fragment() {
@@ -39,7 +41,7 @@ class RegisterFragment : Fragment() {
 
         // Firebase Auth und Database initialisieren
         mAuth = FirebaseAuth.getInstance()
-        database = FirebaseDatabase.getInstance().reference
+        database = FirebaseDatabase.getInstance("https://dein-dienst-eee06-default-rtdb.europe-west1.firebasedatabase.app").reference
 
         // Initialisiere die EditText-Felder und Buttons
         emailEditData = view.findViewById(R.id.emailData)
@@ -70,9 +72,8 @@ class RegisterFragment : Fragment() {
         val postalCode = postalCodeEditData.text.toString().trim().toIntOrNull()
         val telephone = telephoneEditData.text.toString().trim().toLongOrNull()
 
-        if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password) || TextUtils.isEmpty(name) ||
-            TextUtils.isEmpty(address) || postalCode == null || telephone == null) {
-            Toast.makeText(activity, "Bitte füllen Sie alle Felder aus", Toast.LENGTH_SHORT).show()
+        if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password) || TextUtils.isEmpty(name)) {
+            Toast.makeText(activity, "Bitte füllen Sie E-Mail, Passwort und Name aus", Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -90,13 +91,20 @@ class RegisterFragment : Fragment() {
             .addOnCompleteListener(requireActivity()) { createTask ->
                 if (createTask.isSuccessful) {
                     val userId = mAuth.currentUser?.uid
-                    val user = User(name, address, postalCode!!, telephone!!, email)
+                    Log.d("RegisterFragment", "User created with userId: $userId")
+                    val user = User(
+                        name = name,
+                        address = address,
+                        postalCode = postalCode ?: 0, // Standardwert 0 verwenden, wenn kein Wert angegeben
+                        telephone = telephone ?: 0L, // Standardwert 0 verwenden, wenn kein Wert angegeben
+                        email = email
+                    )
                     if (userId != null) {
                         database.child("users").child(userId).setValue(user)
                             .addOnCompleteListener { task ->
                                 if (task.isSuccessful) {
                                     Toast.makeText(activity, "Registrierung erfolgreich", Toast.LENGTH_SHORT).show()
-                                    redirectToAccountFragment()
+                                    startMainActivity()
                                 } else {
                                     Log.e("RegisterFragment", "Database Error: ${task.exception?.message}")
                                     Toast.makeText(activity, "Registrierung fehlgeschlagen: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
@@ -114,12 +122,23 @@ class RegisterFragment : Fragment() {
             }
     }
 
+    /*
     private fun redirectToAccountFragment() {
         val fragment = AccountFragment()
         parentFragmentManager.beginTransaction()
             .replace(R.id.container_register, fragment)
             .addToBackStack(null)
             .commit()
+    }
+
+     */
+
+    private fun startMainActivity() {
+        val intent = Intent(activity, MainActivity::class.java)
+        // Optional: Flags setzen, um sicherzustellen, dass der Benutzer nicht zurück zur Anmeldeaktivität wechseln kann
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+        requireActivity().finish() // Schließt die aktuelle Aktivität
     }
 
     data class User(

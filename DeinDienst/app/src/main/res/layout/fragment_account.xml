@@ -7,18 +7,23 @@
     android:background="@color/background_color"
     tools:context=".Fragment.AccountFragment">
 
+    <!-- Container für den Hauptinhalt -->
     <FrameLayout
         android:id="@+id/fragment_account"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
+        <!-- Inhalt innerhalb des Containers -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <!-- AppBarLayout für die obere Leiste -->
             <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
@@ -62,11 +67,11 @@
                         android:minHeight="32dp"
                         android:src="@drawable/icon_settings" />
                 </LinearLayout>
-
             </com.google.android.material.appbar.AppBarLayout>
 
+            <!-- BottomNavigationView für die Navigation -->
             <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottom_navigation"
+                android:id="@+id/bottom_navigation_account"
                 style="@style/BottomNavigationViewActive"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -75,16 +80,13 @@
                 app:itemTextAppearanceActive="@style/BottomNavigationViewActive"
                 app:itemTextAppearanceInactive="@style/BottomNavigationViewInactive"
                 app:labelVisibilityMode="labeled"
-                app:menu="@menu/bottom_navigation_settings">
+                app:menu="@menu/bottom_navigation_settings" />
 
-            </com.google.android.material.bottomnavigation.BottomNavigationView>
-
+            <!-- Container für andere Fragments -->
             <FrameLayout
-                android:id='@+id/containerSettings'
+                android:id="@+id/containerSettings"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </FrameLayout> <!-- Schattierung (Elevation) auf 0dp setzen, um sie zu entfernen -->
+                android:layout_height="match_parent" /> <!-- MarginTop zum AppBarLayout hinzufügen -->
 
         </LinearLayout>
     </FrameLayout>

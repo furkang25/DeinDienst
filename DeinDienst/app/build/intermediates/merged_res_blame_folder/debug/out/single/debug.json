@@ -92,10 +92,6 @@
         "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-pngs-51:\\drawable-night-anydpi-v24\\logo.xml"
     },
     {
-        "merged": "de.tecrox.deindienst.app-merged_res-56:/layout_fragment_register.xml.flat",
-        "source": "de.tecrox.deindienst.app-main-58:/layout/fragment_register.xml"
-    },
-    {
         "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-merged_res-56:\\drawable_rounded_button.xml.flat",
         "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-58:\\drawable\\rounded_button.xml"
     },
@@ -250,6 +246,10 @@
     {
         "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-merged_res-56:\\drawable_icon_close.xml.flat",
         "source": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-main-58:\\drawable\\icon_close.xml"
+    },
+    {
+        "merged": "de.tecrox.deindienst.app-merged_res-56:/layout_fragment_account.xml.flat",
+        "source": "de.tecrox.deindienst.app-main-58:/layout/fragment_account.xml"
     },
     {
         "merged": "C:\\Users\\Furo\\.gradle\\daemon\\7.4\\de.tecrox.deindienst.app-merged_res-56:\\drawable_icon_education.xml.flat",

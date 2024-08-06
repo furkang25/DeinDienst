@@ -68,13 +68,5 @@
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Settings"
-        android:textColor="@color/text_color"
-        android:textSize="50dp" />
-
 
 </RelativeLayout>

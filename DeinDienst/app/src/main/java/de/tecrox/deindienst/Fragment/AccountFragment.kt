@@ -1,7 +1,9 @@
 package de.tecrox.deindienst.Fragment
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +18,7 @@ import de.tecrox.deindienst.SettingsActivity
 
 class AccountFragment : Fragment() {
 
-    // Diese Methode wird aufgerufen, wenn das Fragment die Ansicht erstellt
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         // Initiales Dienst Seite direkt laden
@@ -26,7 +28,10 @@ class AccountFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_account, container, false)
 
         // Das BottomNavigationView-Element aus der aufgeblasenen Ansicht finden
-        val bottomNavigationView: BottomNavigationView = view.findViewById(R.id.bottom_navigation)
+        val bottomNavigationView: BottomNavigationView = view.findViewById(R.id.bottom_navigation_account)
+
+        // Debugging-Ausgabe hinzufügen
+        Log.d("AccountFragment", "BottomNavigationView gefunden: $bottomNavigationView")
 
         // Einen Listener setzen, der auf die Auswahl von Navigationselementen reagiert
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->

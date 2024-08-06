@@ -1,5 +1,6 @@
 package de.tecrox.deindienst.Login
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.LayoutInflater
@@ -14,6 +15,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import de.tecrox.deindienst.Fragment.AccountFragment
 import de.tecrox.deindienst.Fragment.HomeFragment
+import de.tecrox.deindienst.MainActivity
 import de.tecrox.deindienst.R
 
 class Login2Fragment : Fragment() {
@@ -65,19 +67,19 @@ class Login2Fragment : Fragment() {
                 if (task.isSuccessful) {
                     val user: FirebaseUser? = mAuth.currentUser
                     Toast.makeText(activity, "Login successful", Toast.LENGTH_SHORT).show()
-                    redirectToAccountFragment()
+                    startMainActivity()
                 } else {
                     Toast.makeText(activity, "Authentication failed.", Toast.LENGTH_SHORT).show()
                 }
             }
     }
 
-    private fun redirectToAccountFragment() {
-        val fragment = AccountFragment()
-        parentFragmentManager.beginTransaction()
-            .replace(R.id.container_login2, fragment)
-            .addToBackStack(null)
-            .commit()
+    private fun startMainActivity() {
+        val intent = Intent(activity, MainActivity::class.java)
+        // Optional: Flags setzen, um sicherzustellen, dass der Benutzer nicht zurück zur Anmeldeaktivität wechseln kann
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+        requireActivity().finish() // Schließt die aktuelle Aktivität
     }
 
     // Methode zum Laden eines neuen Fragments
