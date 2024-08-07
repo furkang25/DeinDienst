@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/menubar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonBackSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:minWidth="48dp"
+                    android:minHeight="32dp"
+                    android:src="@drawable/icon_back"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/konto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center|center_vertical"
+                    android:text="Personenbezogene Daten"
+                    android:textColor="@color/main_Color"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <EditText
+            android:id="@+id/dataEmailEdit"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/dataEmailEdit2"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/dataEmailEdit3"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/dataEmailEdit4"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/dataEmailEdit5"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/dataEmailEdit6"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

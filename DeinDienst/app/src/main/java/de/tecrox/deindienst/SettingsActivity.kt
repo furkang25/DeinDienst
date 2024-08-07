@@ -1,5 +1,6 @@
 package de.tecrox.deindienst
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.WindowManager
@@ -9,11 +10,16 @@ import android.widget.Button
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import de.tecrox.deindienst.Login.LoginFragment
+import de.tecrox.deindienst.Settings.AccountSettingsFragment
+import de.tecrox.deindienst.Settings.DataProtectionFragment
+import de.tecrox.deindienst.Settings.NotificationsFragment
+import de.tecrox.deindienst.Settings.PersonalDataFragment
 
 class SettingsActivity : AppCompatActivity() {
 
     private lateinit var mAuth: FirebaseAuth
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_settings)
@@ -33,6 +39,31 @@ class SettingsActivity : AppCompatActivity() {
             Log.d("SettingsActivity", "Back button clicked")
             onBackPressed()  // Zurück zur vorherigen Ansicht gehen
         }
+
+        // Button für PersonalDataFragment initialisieren
+        val linkToPersonalDataButton: Button = findViewById(R.id.linktopersonaldata)
+        linkToPersonalDataButton.setOnClickListener {
+            loadFragment(PersonalDataFragment())
+        }
+
+        // Button für PersonalDataFragment initialisieren
+        val linkToAccountSettingsButton: Button = findViewById(R.id.linktoaccountsettings)
+        linkToAccountSettingsButton.setOnClickListener {
+            loadFragment(AccountSettingsFragment())
+        }
+
+        // Button für PersonalDataFragment initialisieren
+        val linkToNotificationsButton: Button = findViewById(R.id.linktonotifications)
+        linkToNotificationsButton.setOnClickListener {
+            loadFragment(NotificationsFragment())
+        }
+
+        // Button für PersonalDataFragment initialisieren
+        val linkToDataProtectionButton: Button = findViewById(R.id.linktodataprotection)
+        linkToDataProtectionButton.setOnClickListener {
+            loadFragment(DataProtectionFragment())
+        }
+
 
         // Teste Abmelden
         val logoutButton: Button = findViewById(R.id.logoutButton)
